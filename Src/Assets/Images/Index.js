@@ -51,5 +51,16 @@ export default Images = {
     image6: require('./image6.png'),
     AddPostBgImg: require('./addPostBgImg.png'),
     AddPostBlue: require('./AddPostBlue.png'),
+    VideoCamera: require('./VideoCamera.png'),
+    Phone: require('./Phone.png'),
+    Info: require('./Info.png'),
+    microphone: require('./microphone.png'),
+    Image: require('./Image.png'),
+    History: require('./History.png'),
+    Emojis: require('./Emojis.png'),
+    camera: require('./camera.png'),
+    PlusCircle: require('./PlusCircle.png'),
+    EditMessage: require('./editMessage.png'),
+    Comment2: require('./Comment2.png'),
 }
 

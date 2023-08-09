@@ -5,5 +5,6 @@ export default Colors = {
     AppButtonColor1: '#76c3fe',
     AppButtonColor2: '#4067ec',
     SocialButtonColor: '#161b28',
-    
+    ChatTextInputBgColor: '#0B0F18'
+
 }

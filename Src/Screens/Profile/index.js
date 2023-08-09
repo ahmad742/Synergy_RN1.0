@@ -7,6 +7,7 @@ import {
     Text,
     FlatList,
     Pressable,
+    ScrollView,
 } from 'react-native'
 import React, { useState } from 'react'
 import Colors from '../../Utiles/Colors'
@@ -14,7 +15,7 @@ import Images from '../../Assets/Images/Index'
 import ProfileHeader from '../../Components/ProfileHeader'
 import LinearGradient from 'react-native-linear-gradient'
 
-const Profile = () => {
+const Profile = ({ navigation }) => {
 
     const [isFeeds, setIsFeeds] = useState(true)
     const [isTapes, setIsTapes] = useState(false)
@@ -123,24 +124,25 @@ const Profile = () => {
     const _FeedsRenderItem = ({ item }) => {
         return (
             <Pressable style={{
-                width: 130,
+                width: "30%",
                 height: 125,
-
+                margin: 5
             }}>
                 <Image source={item.image}
-                    style={{ width: 124, height: 122, borderRadius: 15 }} />
+                    style={{ width: "100%", height: "100%", borderRadius: 15 }} />
             </Pressable>
         )
     }
     const _TapessRenderItem = ({ item }) => {
         return (
             <Pressable style={{
-                width: 130,
+                width: "30%",
                 height: 170,
+                margin: 5
 
             }}>
                 <Image source={item.image}
-                    style={{ width: 124, height: 160, borderRadius: 15 }} />
+                    style={{ width: "100%", height: "100%", borderRadius: 15 }} />
             </Pressable>
         )
     }
@@ -149,185 +151,192 @@ const Profile = () => {
             backgroundColor: Colors.Background,
             flex: 1
         }}>
-            <View style={{
-                width: '100%',
-                backgroundColor: "#191D2B",
-                borderBottomLeftRadius: 15,
-                borderBottomRightRadius: 15,
-                borderBottomWidth: 0.5,
-                borderColor: Colors.GreyText
-            }}>
-                <ProfileHeader
-                    Username='Usernameeedfs'
-                />
-                <View
-                    style={styles.userDataMainContainer}>
-                    <View style={styles.profileImageConatiner}>
-                        <Image source={Images.ProfileImage} style={{ width: 82, height: 82 }} />
-                        <TouchableOpacity style={styles.editButton}>
-                            <Image source={Images.Edit} style={{ width: 20, height: 20 }} />
+            <ProfileHeader
+                Username='Usernameeedfs'
+            />
+            <ScrollView>
+                <View style={{
+                    width: '100%',
+                    backgroundColor: "#191D2B",
+                    borderBottomLeftRadius: 15,
+                    borderBottomRightRadius: 15,
+                    borderBottomWidth: 0.5,
+                    borderColor: Colors.GreyText
+                }}>
+
+                    <View
+                        style={styles.userDataMainContainer}>
+                        <View style={styles.profileImageConatiner}>
+                            <Image source={Images.ProfileImage} style={{ width: 82, height: 82 }} />
+                            <TouchableOpacity style={styles.editButton}>
+                                <Image source={Images.Edit} style={{ width: 20, height: 20 }} />
+                            </TouchableOpacity>
+                        </View>
+                        <View style={styles.userDataContainer}>
+                            <Text style={styles.userDataTextWhite}>{'99 '}</Text>
+                            <Text style={styles.userDataTextGrey}>{'Posts '}</Text>
+                        </View>
+                        <View style={styles.userDataContainer}>
+                            <Text style={styles.userDataTextWhite}>{'22k '}</Text>
+                            <Text style={styles.userDataTextGrey}>{'Followers '}</Text>
+                        </View>
+                        <View style={{
+                            width: 88,
+                            height: 60,
+                            justifyContent: "center",
+                            alignItems: "center"
+                        }}>
+                            <Text style={styles.userDataTextWhite}>{'60 '}</Text>
+                            <Text style={styles.userDataTextGrey}>{'Following '}</Text>
+                        </View>
+                    </View>
+                    <LinearGradient
+
+                        start={{ x: 4, y: 0.5 }} end={{ x: 0.5, y: 3 }}
+                        colors={['#C9DEFF', '#191D2B']}
+                        style={styles.userDescriptionContainer}>
+                        <Text style={{ fontSize: 18, fontWeight: '600', color: Colors.white, lineHeight: 24 }}>
+                            {'Vitaliy Dorozhko - UI/UX Designer'}
+                        </Text>
+                        <Text style={{ fontSize: 14, fontWeight: '500', color: Colors.GreyText, lineHeight: 20 }}>
+                            {'Product Designer'}
+                        </Text>
+                        <Text style={{ fontSize: 14, fontWeight: '500', color: Colors.white, lineHeight: 24, marginTop: 10 }}>
+                            {'I create beautiful and user-friendly interactive interfaces'}
+                        </Text>
+                        <Text style={{ fontSize: 16, fontWeight: '500', color: Colors.AppButtonColor1, lineHeight: 20, marginTop: 10 }}>
+                            {'www.dribbble.com'}
+                        </Text>
+                    </LinearGradient>
+                    <View style={styles.editProfileMainContainer}>
+                        <TouchableOpacity style={styles.editProfileButton}>
+                            <Text style={{ fontSize: 16, fontWeight: '600', color: Colors.white }}>{'Edit Profile'}</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity
+                            onPress={() => navigation.navigate('AllMessages')}
+                            style={styles.messageButton}>
+                            <Image style={{ width: 17, height: 14, tintColor: Colors.white }}
+                                source={Images.Email} />
+                        </TouchableOpacity>
+                        <TouchableOpacity
+
+                            style={styles.messageButton}>
+                            <Image style={{ width: 17, height: 14, tintColor: Colors.white }}
+                                source={Images.Bag2} />
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.messageButton}>
+                            <Image style={{ width: 17, height: 14, tintColor: Colors.white }}
+                                source={Images.AddUser} />
                         </TouchableOpacity>
                     </View>
-                    <View style={styles.userDataContainer}>
-                        <Text style={styles.userDataTextWhite}>{'99 '}</Text>
-                        <Text style={styles.userDataTextGrey}>{'Posts '}</Text>
-                    </View>
-                    <View style={styles.userDataContainer}>
-                        <Text style={styles.userDataTextWhite}>{'22k '}</Text>
-                        <Text style={styles.userDataTextGrey}>{'Followers '}</Text>
-                    </View>
-                    <View style={{
-                        width: 88,
-                        height: 60,
-                        justifyContent: "center",
-                        alignItems: "center"
-                    }}>
-                        <Text style={styles.userDataTextWhite}>{'60 '}</Text>
-                        <Text style={styles.userDataTextGrey}>{'Following '}</Text>
-                    </View>
+                    <FlatList
+                        style={{
+                            width: '90%',
+                            alignSelf: "center",
+                        }}
+                        horizontal
+                        showsHorizontalScrollIndicator={false}
+                        data={FriendsData}
+                        renderItem={_FriendsRenderItem}
+                        keyExtractor={item => item.id}
+                    />
                 </View>
-                <LinearGradient
+                <View style={styles.tabbarContainer}>
+                    <TouchableOpacity
+                        onPress={() => {
+                            setIsFeeds(true),
+                                setIsTags(false)
+                            setIsTapes(false)
+                        }}
+                        style={[styles.tabbarstyle, {
+                            borderBottomColor: isFeeds ? Colors.AppButtonColor1 : Colors.GreyText,
+                            borderBottomWidth: isFeeds ? 3 : 1,
 
-                    start={{ x: 4, y: 0.5 }} end={{ x: 0.5, y: 3 }}
-                    colors={['#C9DEFF', '#191D2B']}
-                    style={styles.userDescriptionContainer}>
-                    <Text style={{ fontSize: 18, fontWeight: '600', color: Colors.white, lineHeight: 24 }}>
-                        {'Vitaliy Dorozhko - UI/UX Designer'}
-                    </Text>
-                    <Text style={{ fontSize: 14, fontWeight: '500', color: Colors.GreyText, lineHeight: 20 }}>
-                        {'Product Designer'}
-                    </Text>
-                    <Text style={{ fontSize: 14, fontWeight: '500', color: Colors.white, lineHeight: 24, marginTop: 10 }}>
-                        {'I create beautiful and user-friendly interactive interfaces'}
-                    </Text>
-                    <Text style={{ fontSize: 16, fontWeight: '500', color: Colors.AppButtonColor1, lineHeight: 20, marginTop: 10 }}>
-                        {'www.dribbble.com'}
-                    </Text>
-                </LinearGradient>
-                <View style={styles.editProfileMainContainer}>
-                    <TouchableOpacity style={styles.editProfileButton}>
-                        <Text style={{ fontSize: 16, fontWeight: '600', color: Colors.white }}>{'Edit Profile'}</Text>
+                        }]}>
+                        <Image style={{
+                            width: 20, height: 20, marginRight: 5,
+                            tintColor: isFeeds ? Colors.white : Colors.GreyText
+                        }} source={Images.Category} />
+                        <Text style={{
+                            fontSize: 18, fontWeight: '600',
+                            color: isFeeds ? Colors.white : Colors.GreyText
+                        }}>
+                            {'Feeds'}
+                        </Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.messageButton}>
-                        <Image style={{ width: 17, height: 14, tintColor: Colors.white }}
-                            source={Images.Email} />
+                    <TouchableOpacity
+                        onPress={() => {
+                            setIsFeeds(false),
+                                setIsTags(false)
+                            setIsTapes(true)
+                        }}
+                        style={[styles.tabbarstyle, {
+                            borderBottomColor: isTapes ? Colors.AppButtonColor1 : Colors.GreyText,
+                            borderBottomWidth: isTapes ? 3 : 1,
+                        }]}>
+                        <Image style={{
+                            width: 20, height: 20, marginRight: 5,
+                            tintColor: isTapes ? Colors.white : Colors.GreyText
+                        }} source={Images.Video} />
+                        <Text style={{
+                            fontSize: 18, fontWeight: '600',
+                            color: isTapes ? Colors.white : Colors.GreyText
+                        }}>
+                            {'Tapes'}
+                        </Text>
                     </TouchableOpacity>
-                    <TouchableOpacity style={styles.messageButton}>
-                        <Image style={{ width: 17, height: 14, tintColor: Colors.white }}
-                            source={Images.Bag2} />
-                    </TouchableOpacity>
-                    <TouchableOpacity style={styles.messageButton}>
-                        <Image style={{ width: 17, height: 14, tintColor: Colors.white }}
-                            source={Images.AddUser} />
+                    <TouchableOpacity
+                        onPress={() => {
+                            setIsFeeds(false),
+                                setIsTags(true)
+                            setIsTapes(false)
+                        }}
+                        style={[styles.tabbarstyle, {
+                            borderBottomColor: isTags ? Colors.AppButtonColor1 : Colors.GreyText,
+                            borderBottomWidth: isTags ? 3 : 1,
+                        }]}>
+                        <Image style={{
+                            width: 20, height: 20, marginRight: 5,
+                            tintColor: isTags ? Colors.white : Colors.GreyText
+                        }} source={Images.Profile2user} />
+                        <Text style={{
+                            fontSize: 18, fontWeight: '600',
+                            color: isTags ? Colors.white : Colors.GreyText
+                        }}>
+                            {'Tags'}
+                        </Text>
                     </TouchableOpacity>
                 </View>
-                <FlatList
-                    style={{
-                        width: '90%',
-                        alignSelf: "center",
-                    }}
-                    horizontal
-                    showsHorizontalScrollIndicator={false}
-                    data={FriendsData}
-                    renderItem={_FriendsRenderItem}
-                    keyExtractor={item => item.id}
-                />
-            </View>
-            <View style={styles.tabbarContainer}>
-                <TouchableOpacity
-                    onPress={() => {
-                        setIsFeeds(true),
-                            setIsTags(false)
-                        setIsTapes(false)
-                    }}
-                    style={[styles.tabbarstyle, {
-                        borderBottomColor: isFeeds ? Colors.AppButtonColor1 : Colors.GreyText,
-                        borderBottomWidth: isFeeds ? 3 : 1,
-
-                    }]}>
-                    <Image style={{
-                        width: 20, height: 20, marginRight: 5,
-                        tintColor: isFeeds ? Colors.white : Colors.GreyText
-                    }} source={Images.Category} />
-                    <Text style={{
-                        fontSize: 18, fontWeight: '600',
-                        color: isFeeds ? Colors.white : Colors.GreyText
-                    }}>
-                        {'Feeds'}
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                    onPress={() => {
-                        setIsFeeds(false),
-                            setIsTags(false)
-                        setIsTapes(true)
-                    }}
-                    style={[styles.tabbarstyle, {
-                        borderBottomColor: isTapes ? Colors.AppButtonColor1 : Colors.GreyText,
-                        borderBottomWidth: isTapes ? 3 : 1,
-                    }]}>
-                    <Image style={{
-                        width: 20, height: 20, marginRight: 5,
-                        tintColor: isTapes ? Colors.white : Colors.GreyText
-                    }} source={Images.Video} />
-                    <Text style={{
-                        fontSize: 18, fontWeight: '600',
-                        color: isTapes ? Colors.white : Colors.GreyText
-                    }}>
-                        {'Tapes'}
-                    </Text>
-                </TouchableOpacity>
-                <TouchableOpacity
-                    onPress={() => {
-                        setIsFeeds(false),
-                            setIsTags(true)
-                        setIsTapes(false)
-                    }}
-                    style={[styles.tabbarstyle, {
-                        borderBottomColor: isTags ? Colors.AppButtonColor1 : Colors.GreyText,
-                        borderBottomWidth: isTags ? 3 : 1,
-                    }]}>
-                    <Image style={{
-                        width: 20, height: 20, marginRight: 5,
-                        tintColor: isTags ? Colors.white : Colors.GreyText
-                    }} source={Images.Profile2user} />
-                    <Text style={{
-                        fontSize: 18, fontWeight: '600',
-                        color: isTags ? Colors.white : Colors.GreyText
-                    }}>
-                        {'Tags'}
-                    </Text>
-                </TouchableOpacity>
-            </View>
-            {
-                isFeeds &&
-                <FlatList
-                    style={{
-                        width: '90%',
-                        alignSelf: 'center',
-                        marginTop: 10,
-                        marginBottom: 80
-                    }}
-                    numColumns={3}
-                    data={FeedsData}
-                    renderItem={_FeedsRenderItem}
-                    keyExtractor={item => item.data}
-                />
-            }
-            {isTapes &&
-                <FlatList
-                    style={{
-                        width: '90%',
-                        alignSelf: 'center',
-                        marginTop: 10,
-                        marginBottom: 80
-                    }}
-                    numColumns={3}
-                    data={FeedsData}
-                    renderItem={_TapessRenderItem}
-                    keyExtractor={item => item.data}
-                />
-            }
+                {
+                    isFeeds &&
+                    <FlatList
+                        style={{
+                            width: '90%',
+                            alignSelf: 'center',
+                            marginTop: 10,
+                            marginBottom: 80
+                        }}
+                        numColumns={3}
+                        data={FeedsData}
+                        renderItem={_FeedsRenderItem}
+                        keyExtractor={item => item.data}
+                    />
+                }
+                {isTapes &&
+                    <FlatList
+                        style={{
+                            width: '90%',
+                            alignSelf: 'center',
+                            marginTop: 10,
+                            marginBottom: 80
+                        }}
+                        numColumns={3}
+                        data={FeedsData}
+                        renderItem={_TapessRenderItem}
+                        keyExtractor={item => item.data}
+                    />
+                }
+            </ScrollView>
         </SafeAreaView>
     )
 }

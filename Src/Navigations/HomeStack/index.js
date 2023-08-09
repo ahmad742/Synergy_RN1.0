@@ -8,6 +8,8 @@ import Images from '../../Assets/Images/Index'
 import Colors from '../../Utiles/Colors';
 import Search from '../../Screens/Search';
 import Profile from '../../Screens/Profile';
+import Chat from '../../Screens/Chat';
+import AllMessages from '../../Screens/AllMessages';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -188,6 +190,8 @@ function HomeStack() {
             initialRouteName='TabStack'
         >
             <Stack.Screen name="TabStack" component={TabStack} />
+            <Stack.Screen name="Chat" component={Chat} />
+            <Stack.Screen name="AllMessages" component={AllMessages} />
         </Stack.Navigator>
     );
 }
