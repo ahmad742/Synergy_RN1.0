@@ -41,7 +41,7 @@ const ChatHeader = (props) => {
                         width: 50,
                         height: 50,
                         borderRadius: 100
-                    }} source={userProfile} />
+                    }} source={Images.ProfileImage} />
                 </View>
                 <View>
                     <Text style={{ fontSize: 16, fontWeight: '700', color: Colors.white }}>

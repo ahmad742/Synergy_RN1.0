@@ -6,12 +6,10 @@ import LinearGradient from 'react-native-linear-gradient'
 
 const AllChatsHeader = (props) => {
     const {
-        Username,
-        userProfile,
-        status,
         placeholder,
         value,
-        onChangeText
+        onChangeText,
+        onBackPress
     } = props
     return (
         <View style={styles.mainContainer}>
@@ -27,6 +25,7 @@ const AllChatsHeader = (props) => {
                     alignItems: 'center',
                 }}>
                     <TouchableOpacity
+                        onPress={onBackPress}
                         style={{
                             width: 40,
                             justifyContent: 'center',
@@ -49,7 +48,7 @@ const AllChatsHeader = (props) => {
                             width: 50,
                             height: 50,
                             borderRadius: 100
-                        }} source={userProfile} />
+                        }} source={Images.ProfileImage} />
                     </View>
                     <Text style={{ fontSize: 28, fontWeight: '600', color: Colors.white }}>
                         {'Chat'}</Text>

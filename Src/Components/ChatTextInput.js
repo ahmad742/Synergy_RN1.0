@@ -22,10 +22,10 @@ const ChatTextInput = (props) => {
 
     return (
         <KeyboardAvoidingView
-            behavior={Platform.OS === 'ios' ? 'padding' : 'height'}
-            style={{ flex: 1 }}
+            behavior={Platform.OS === 'ios' && 'padding' }
+            // style={{ flex: 1 }} 
         >
-            <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
+            {/* <TouchableWithoutFeedback onPress={Keyboard.dismiss}> */}
                 <View style={{
                     width: "100%",
                     alignSelf: "center",
@@ -129,8 +129,8 @@ const ChatTextInput = (props) => {
                             source={Images.PlusCircle} />
                     </TouchableOpacity>
                 </View>
-            </TouchableWithoutFeedback>
-        </KeyboardAvoidingView>
+            {/* </TouchableWithoutFeedback> */}
+    </KeyboardAvoidingView> 
     )
 }
 
