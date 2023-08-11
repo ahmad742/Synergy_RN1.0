@@ -6,11 +6,38 @@ import Header from '../../Components/Header'
 import AppTextInput from '../../Components/AppTextInput'
 import Images from '../../Assets/Images/Index'
 import AppButton from '../../Components/AppButton'
-
+import { signIn } from '../../api/methods/auth'
 const Login = ({ navigation }) => {
 
     const [email, setEmail] = useState('')
     const [passwword, setPassword] = useState('')
+
+
+    const onSignInPress = async () => {
+        if (email == '' && passwword == '') {
+            alert('Email and Password is required')
+        } else {
+            console.log(email,passwword)
+            try {
+                const response = await signIn({
+                    email: email,
+                    password: passwword  
+                });
+                if(response.data.status=='error'){
+                    alert(response.data.message)
+                }else{
+                    
+                    navigation.replace('HomeStack')
+                }
+                console.log('Response', response.data);
+            } catch (error) {
+                if (error.response) {
+                    console.log('Error:', error.response.data);
+                }
+            }
+                        
+        }
+    }
 
     return (
         <LinearGradient colors={['#101321', '#0a0e16']} style={styles.mainContainer}>
@@ -30,13 +57,13 @@ const Login = ({ navigation }) => {
                 </View>
                 <AppTextInput
                     placeholder='Email'
-                    onChangeText={() => setEmail()}
+                    onChangeText={(val) => setEmail(val)}
                     value={email}
                     LeftIcon={Images.Email}
                 />
                 <AppTextInput
                     placeholder='Password'
-                    onChangeText={() => setPassword()}
+                    onChangeText={(val) => setPassword(val)}
                     value={passwword}
                     LeftIcon={Images.Password}
                     rightIcon={Images.View}
@@ -57,7 +84,7 @@ const Login = ({ navigation }) => {
                 <AppButton
                     ButtonText={'Sign In'}
                     ButtonStyle={styles.ButtonStyle}
-                // onPress={() => navigation.replace('AuthStack')}
+                    onPress={() => onSignInPress()}
                 />
                 <View style={styles.continueContainer}>
                     <View style={styles.borderline}></View>
@@ -142,7 +169,7 @@ const styles = StyleSheet.create({
         width: '90%',
         alignSelf: 'center',
         marginTop: 30,
-        justifyContent:"center"
+        justifyContent: "center"
 
     },
     borderline: {

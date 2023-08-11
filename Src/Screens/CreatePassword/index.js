@@ -8,10 +8,45 @@ import Images from '../../Assets/Images/Index'
 import AppTextInput from '../../Components/AppTextInput'
 import AppButton from '../../Components/AppButton'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
-
-const CreatePassword = ({ navigation }) => {
-
+import { signUpAPI } from '../../api/methods/auth'
+const CreatePassword = ({ navigation, route }) => {
+    let udata = {}
+    let userdata = route.params.userdata
+    const [finalData, setFinalData] = useState(userdata)
     const [password, setPassword] = useState('')
+    const onContinuePress = async () => {
+        if (password == '') {
+            alert('Enter Password')
+        } else {
+            if (finalData.email == undefined) {
+                udata = {
+                    "username": finalData.username,
+                    "phone_code": finalData.code,
+                    "phone": finalData.phone,
+                    "password": password
+                }
+            } else {
+                udata = {
+
+                    "username": finalData.username,
+                    "email": finalData.email,
+                    "password": password
+                }
+            }
+            try {
+                const response = await signUpAPI(udata)
+                console.log('SigupAPI Response', response.data)
+                if (response.data.status == 'success') {
+                    navigation.replace('Login')
+                } else {
+                    alert(response.data.message)
+                }
+            } catch (error) {
+                console.log('SigupAPI Error', error)
+            }
+        }
+    }
+
 
     return (
         <LinearGradient colors={['#101321', '#0a0e16']} style={styles.mainContainer}>
@@ -72,11 +107,11 @@ const CreatePassword = ({ navigation }) => {
                             <AppButton
                                 ButtonText={'Continue'}
                                 ButtonStyle={styles.ButtonStyle}
-                            // onPress={() => navigation.navigate('CreatePassword')}
+                                onPress={() => onContinuePress()}
                             />
                             :
                             <TouchableOpacity
-                                onPress={() => alert('Please enter a password')}
+                                onPress={() => onContinuePress()}
                                 style={{
                                     width: '90%',
                                     alignSelf: 'center',

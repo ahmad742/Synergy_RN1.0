@@ -7,12 +7,62 @@ import AppTextInput from '../../Components/AppTextInput'
 import Images from '../../Assets/Images/Index'
 import AppButton from '../../Components/AppButton'
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import { checkEmail, checkPhone } from '../../api/methods/auth'
 
 const SignUp = ({ navigation }) => {
     const [isPhone, setIsPhone] = useState(true)
     const [isEmail, setIsEmail] = useState(false)
     const [phone, setPhone] = useState('')
     const [email, setEmail] = useState('')
+    const [phoneCode,setPhoneCode]=useState('+65')
+
+
+    const onSendCodePress = async () => {
+        if (isEmail) {
+            if (email == '') {
+                alert('Enter an Email')
+            } else {
+                try {
+                    const response = await checkEmail({
+                        "email": email,
+                    })
+                    console.log('CheckEmailAPI Response', response.data)
+                    if(response.data.status=='success'){
+                        let obj={'email':email}
+                        navigation.navigate('CreateUsername',{data:obj})
+                    }else{
+                        alert(response.data.message)
+                    }
+                } catch (error) {
+                    console.log('CheckEmailAPI Error', error)
+                }
+
+            }
+        }
+        if (isPhone) {
+            if (phone == '') {
+                alert('Enter Phone Number')
+            } else {
+                try {
+                    const response = await checkPhone({
+                        "phone_code":phoneCode,
+                        "phone": phone,
+                    })
+                    console.log('checkPhoneAPI Response', response.data)
+                    
+                    if(response.data.status=='success'){
+                        let obj={code:phoneCode,phone:phone}
+                        navigation.navigate('CreateUsername',{data:obj})
+                    }else{
+                        alert(response.data.message)
+                    }
+                } catch (error) {
+                    console.log('checkPhoneAPI Error', error)
+                }
+
+            }
+        }
+    }
     return (
         <LinearGradient colors={['#101321', '#0a0e16']} style={styles.mainContainer}>
             <SafeAreaView style={{ flex: 1 }}>
@@ -20,6 +70,7 @@ const SignUp = ({ navigation }) => {
                     Heading={'Sign Up'}
                     onBackPress={() => navigation.goBack()}
                     Backicon={Images.BackIcon}
+
                 />
                 <View style={styles.tabbarContainer}>
                     <TouchableOpacity
@@ -84,11 +135,12 @@ const SignUp = ({ navigation }) => {
                                 <AppButton
                                     ButtonText={'Send Code'}
                                     ButtonStyle={styles.ButtonStyle}
-                                    onPress={() => navigation.replace('OtpVerification')}
+                                    // onPress={() => navigation.replace('OtpVerification')}
+                                    onPress={()=>onSendCodePress()}
                                 />
                                 :
                                 <TouchableOpacity
-                                    onPress={() => alert('Please enter a phone number')}
+                                    onPress={() => onSendCodePress()}
                                     style={{
                                         width: '90%',
                                         alignSelf: 'center',
@@ -122,11 +174,11 @@ const SignUp = ({ navigation }) => {
                                 <AppButton
                                     ButtonText={'Send Code'}
                                     ButtonStyle={styles.ButtonStyle}
-                                    onPress={() => navigation.replace('ConfirmEmail')}
+                                    onPress={() => onSendCodePress()}
                                 />
                                 :
                                 <TouchableOpacity
-                                    onPress={() => alert('Please enter an email')}
+                                    onPress={() => onSendCodePress()}
                                     style={{
                                         width: '90%',
                                         alignSelf: 'center',

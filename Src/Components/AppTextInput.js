@@ -20,13 +20,14 @@ const AppTextInput = (props) => {
             backgroundColor: Colors.SocialButtonColor,
             marginTop: 20,
             borderRadius: 12,
-            width:'90%',
-            alignSelf:'center'
+            width: '90%',
+            alignSelf: 'center'
         }}>
             <Image style={{ width: 15, height: 15, tintColor: Colors.white }}
                 source={LeftIcon}
             />
             <TextInput
+                keyboardType='email-address'
                 placeholder={placeholder}
                 value={value}
                 onChangeText={onChangeText}

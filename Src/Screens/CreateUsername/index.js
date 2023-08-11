@@ -7,10 +7,34 @@ import Header from '../../Components/Header'
 import Images from '../../Assets/Images/Index'
 import AppTextInput from '../../Components/AppTextInput'
 import AppButton from '../../Components/AppButton'
+import { checkUserName } from '../../api/methods/auth'
 
-const CreatePassword = ({ navigation }) => {
+const CreatePassword = ({ navigation,route }) => {
 
+    const obj=route.params.data
     const [username, setUsername] = useState('')
+    const [data,setData]=useState(obj)
+    const onContinuePress=async()=>{
+        if (username == '') {
+            alert('Enter an UserName')
+        }else{
+            try {
+                const response = await checkUserName({
+                    "username": username,
+                })
+                console.log('UserNameAPI Response', response.data)
+                if(response.data.status=='success'){
+                    let userdata={...data,username:username}
+                    navigation.navigate('CreatePassword',{userdata:userdata})
+                    
+                }else{
+                    alert(response.data.message)
+                }
+            } catch (error) {
+                console.log('UserNameAPI Error', error)
+            }
+        }
+    }
 
     return (
         <LinearGradient colors={['#101321', '#0a0e16']} style={styles.mainContainer}>
@@ -55,7 +79,7 @@ const CreatePassword = ({ navigation }) => {
                         <AppButton
                             ButtonText={'Continue'}
                             ButtonStyle={styles.ButtonStyle}
-                            onPress={() => navigation.navigate('CreatePassword')}
+                            onPress={() => onContinuePress()}
                         />
                         :
                         <TouchableOpacity
