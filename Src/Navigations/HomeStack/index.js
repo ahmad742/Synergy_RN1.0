@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { View, Text, Image, TouchableOpacity } from 'react-native';
+import { View, Text, Image, TouchableOpacity, StyleSheet } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -10,6 +10,8 @@ import Search from '../../Screens/Search';
 import Profile from '../../Screens/Profile';
 import Chat from '../../Screens/Chat';
 import AllMessages from '../../Screens/AllMessages';
+import ReelsScreen from '../../Screens/Reels/ReelsScreen';
+import NewPostScreen from '../../Screens/NewPostScreen/NewPostScreen';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -31,7 +33,6 @@ const TabStack = () => {
                     borderTopWidth: 0,
                 }
             }}
-
             initialRouteName={
                 'HomeScreen'
             }
@@ -39,10 +40,10 @@ const TabStack = () => {
             <Tab.Screen
                 options={{
                     tabBarShowLabel: false,
+                    headerShown: false,
                     tabBarIcon: ({ focused }) => {
-
                         return (
-                            <TouchableOpacity style={{
+                            <View style={{
                                 width: 50,
                                 height: 50,
                                 justifyContent: "center",
@@ -68,18 +69,19 @@ const TabStack = () => {
                                     resizeMode='contain'
                                     source={Images.Home}
                                 />
-                            </TouchableOpacity>
+                            </View>
                         )
                     }
                 }}
-                name=" " component={HomeScreen}
+                name="HomeScreen" component={HomeScreen}
             />
             <Tab.Screen
                 options={{
                     tabBarShowLabel: false,
+                    headerShown: false,
                     tabBarIcon: ({ focused }) => {
                         return (
-                            <TouchableOpacity style={{
+                            <View style={{
                                 width: 50,
                                 height: 50,
                                 justifyContent: "center",
@@ -105,45 +107,80 @@ const TabStack = () => {
                                     resizeMode='contain'
                                     source={Images.Search}
                                 />
-                            </TouchableOpacity>
+                            </View>
                         )
                     }
                 }}
-                name="Search" component={Search}
+                name="ReelsScreen" component={ReelsScreen}
+            />
+            <Tab.Screen
+                name='NewPostScreen'
+                component={NewPostScreen}
+                options={{
+                    headerShown: false,
+                    tabBarShowLabel: false,
+                    tabBarIcon: ({ focused }) => (
+                        <View style={{
+                            top: -20,
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            // ...styles.shadow,
+                            width: 100,
+                            height: 100,
+                        }}>
+                            <Image
+                                source={Images.AddPostBlue}
+                                style={{ width: 100, height: 100 }}
+                            />
+                        </View>
+                    )
+                }}
             />
             <Tab.Screen
                 options={{
                     tabBarShowLabel: false,
+                    headerShown: false,
                     tabBarIcon: ({ focused }) => {
                         return (
-                            <TouchableOpacity style={{
-                                width: 100,
-                                height: 100,
+                            <View style={{
+                                width: 50,
+                                height: 50,
                                 justifyContent: "center",
                                 alignItems: "center",
-                                position: 'absolute',
-                                top: 0,
                             }}>
+                                <View style={{
+                                    width: 32,
+                                    height: 5,
+                                    backgroundColor: focused ? Colors.white : Colors.GreyText,
+                                    borderTopColor: focused ? Colors.white : Colors.GreyText,
+                                    borderTopWidth: 1,
+                                    borderBottomRightRadius: 10,
+                                    borderBottomLeftRadius: 10,
+                                    position: "absolute",
+                                    top: 0
+                                }}></View>
                                 <Image
                                     style={{
-                                        width: 100,
-                                        height: 100,
+                                        width: 27,
+                                        height: 27,
+                                        tintColor: focused ? Colors.white : Colors.GreyText,
                                     }}
                                     resizeMode='contain'
-                                    source={Images.AddPostBlue}
+                                    source={Images.Pin}
                                 />
-                            </TouchableOpacity>
+                            </View>
                         )
                     }
                 }}
-                name="Home" component={HomeScreen}
+                name="Chat" component={Chat}
             />
             <Tab.Screen
                 options={{
                     tabBarShowLabel: false,
+                    headerShown: false,
                     tabBarIcon: ({ focused }) => {
                         return (
-                            <TouchableOpacity style={{
+                            <View style={{
                                 width: 50,
                                 height: 50,
                                 justifyContent: "center",
@@ -169,15 +206,25 @@ const TabStack = () => {
                                     resizeMode='contain'
                                     source={Images.Profile}
                                 />
-                            </TouchableOpacity>
+                            </View>
                         )
                     }
                 }}
                 name="Profile" component={Profile}
             />
         </Tab.Navigator>
-    );
+    )
 }
+
+const styles = StyleSheet.create({
+    shadow: {
+        shadowColor: '#7f5df0',
+        shadowOffset: { width: 0, height: 10, },
+        shadowOpacity: .25,
+        shadowRadius: 3.5,
+        elevation: 5,
+    },
+})
 
 
 function HomeStack() {
@@ -192,6 +239,7 @@ function HomeStack() {
             <Stack.Screen name="TabStack" component={TabStack} />
             <Stack.Screen name="Chat" component={Chat} />
             <Stack.Screen name="AllMessages" component={AllMessages} />
+            <Stack.Screen name="ReelsScreen" component={ReelsScreen} />
         </Stack.Navigator>
     );
 }

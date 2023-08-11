@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.synergy.app-mergeDebugResources-32:/values-fi/values-fi.xml",
+            "outputFile": "com.synergy.app-mergeDebugResources-35:/values-fi/values-fi.xml",
             "map": [
                 {
                     "source": "/Users/ahmad/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/res/values-fi/values.xml",
@@ -18,6 +18,23 @@
                         "startOffsets": "2775,2886,3039,3170,3276,3419,3545,3661,3918,4059,4165,4314,4440,4588,4727,4793,4863",
                         "endColumns": "110,152,130,105,142,125,115,106,140,105,148,125,147,138,65,69,82",
                         "endOffsets": "2881,3034,3165,3271,3414,3540,3656,3763,4054,4160,4309,4435,4583,4722,4788,4858,4941"
+                    }
+                },
+                {
+                    "source": "/Users/ahmad/.gradle/caches/transforms-3/05d9c604eec486451901ac6ad8c9cd7a/transformed/jetified-ucrop-2.2.6-native/res/values-fi/values-fi.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,178,243,293",
+                        "endColumns": "122,64,49,48",
+                        "endOffsets": "173,238,288,337"
+                    },
+                    "to": {
+                        "startLines": "49,50,51,52",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "5128,5251,5316,5366",
+                        "endColumns": "122,64,49,48",
+                        "endOffsets": "5246,5311,5361,5410"
                     }
                 },
                 {

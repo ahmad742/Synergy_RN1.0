@@ -2,6 +2,7 @@ import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import React from 'react'
 import Images from '../Assets/Images/Index'
 import Colors from '../Utiles/Colors'
+import { moderateScale } from 'react-native-size-matters'
 
 const HomeScreenHeader = (props) => {
     const { Heading, onBackPress, Backicon, RightText, Lefticon } = props
@@ -14,7 +15,7 @@ const HomeScreenHeader = (props) => {
                     height: 50,
                 }}>
                 <Image style={{
-                    width: 212,
+                    width: moderateScale(200),
                     height: 40,
                 }} source={Images.SynergyHeader} />
             </View>
