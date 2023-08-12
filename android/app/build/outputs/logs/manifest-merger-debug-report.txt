@@ -8,13 +8,19 @@ MERGED from /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/
 MERGED from [com.facebook.flipper:flipper-network-plugin:0.182.0] /Users/ahmad/.gradle/caches/transforms-3/e47626a30834dcd66576d826bae55315/transformed/jetified-flipper-network-plugin-0.182.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.182.0] /Users/ahmad/.gradle/caches/transforms-3/927874504f02e490d8ef5fc541319ddd/transformed/jetified-flipper-fresco-plugin-0.182.0/AndroidManifest.xml:8:1-15:12
 MERGED from [com.facebook.flipper:flipper:0.182.0] /Users/ahmad/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:8:1-18:12
+MERGED from [:react-native-async-storage_async-storage] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-camera-roll_camera-roll] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/@react-native-camera-roll/camera-roll/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-google-signin_google-signin] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/@react-native-google-signin/google-signin/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-31:12
+MERGED from [:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-19:12
 MERGED from [:react-native-linear-gradient] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-safe-area-context] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [:react-native-screens] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
+MERGED from [:react-native-video] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-video/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.react:react-android:0.72.3] /Users/ahmad/.gradle/caches/transforms-3/c89beba49bda3c7ff0db4787685e5ed7/transformed/jetified-react-android-0.72.3-debug/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.react:hermes-android:0.72.3] /Users/ahmad/.gradle/caches/transforms-3/430a607cf6d546758ce98bd168677a7b/transformed/jetified-hermes-android-0.72.3-debug/AndroidManifest.xml:2:1-7:12
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/ahmad/.gradle/caches/transforms-3/463b085172aadec89519c358dac4e9e6/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] /Users/ahmad/.gradle/caches/transforms-3/05d9c604eec486451901ac6ad8c9cd7a/transformed/jetified-ucrop-2.2.6-native/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.core:core-ktx:1.5.0] /Users/ahmad/.gradle/caches/transforms-3/c87b97424659a3cc7da5af62d81a0b78/transformed/jetified-core-ktx-1.5.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.android.ndk.thirdparty:openssl:1.1.1l-beta-1] /Users/ahmad/.gradle/caches/transforms-3/9aee53ed1b97b29f8fa14a865487ca10/transformed/jetified-openssl-1.1.1l-beta-1/AndroidManifest.xml:1:1-3:12
 MERGED from [com.facebook.fbjni:fbjni:0.3.0] /Users/ahmad/.gradle/caches/transforms-3/34c2120d0d3cd8dc97826fc02c9e8fc4/transformed/jetified-fbjni-0.3.0/AndroidManifest.xml:2:1-9:12
@@ -33,11 +39,12 @@ MERGED from [com.facebook.fresco:imagepipeline:2.6.0] /Users/ahmad/.gradle/cache
 MERGED from [com.facebook.fresco:nativeimagetranscoder:2.6.0] /Users/ahmad/.gradle/caches/transforms-3/fd58a95d6d667387129ce8a3f54b74ad/transformed/jetified-nativeimagetranscoder-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/ahmad/.gradle/caches/transforms-3/e7a05d09ffaa90425e2121f36a5185b6/transformed/jetified-imagepipeline-base-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.material:material:1.1.0] /Users/ahmad/.gradle/caches/transforms-3/9300c7fc5aff0974f1ee709fb212c45e/transformed/material-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.adityaxjha:Android-ScalableVideoView:10e7b4da8b] /Users/ahmad/.gradle/caches/transforms-3/8043cf9f09bc5e65ef532fe884927f14/transformed/jetified-Android-ScalableVideoView-10e7b4da8b/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/ahmad/.gradle/caches/transforms-3/b14585e0ae3314e7a64bac79062dab1c/transformed/appcompat-1.4.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/ahmad/.gradle/caches/transforms-3/aed854fb12aa7a4f325a5318b63d5aa8/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/ahmad/.gradle/caches/transforms-3/30de096d5ba1553f19f74e52c1ed5c94/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.autofill:autofill:1.1.0] /Users/ahmad/.gradle/caches/transforms-3/b2c399022120a5a16a836a433ff38c79/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ahmad/.gradle/caches/transforms-3/d2a0ef851359ae355103c8a357e2e22c/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/ahmad/.gradle/caches/transforms-3/d9be3a8e87333c5c5f406cc5515878e5/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:17:1-40:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] /Users/ahmad/.gradle/caches/transforms-3/0dbed10ee94cf33885e954f1b1e1fad1/transformed/jetified-play-services-auth-api-phone-18.0.1/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.gms:play-services-auth-base:18.0.4] /Users/ahmad/.gradle/caches/transforms-3/5d995f75816482ce06c270c8b1dc81a1/transformed/jetified-play-services-auth-base-18.0.4/AndroidManifest.xml:2:1-7:12
@@ -55,6 +62,7 @@ MERGED from [androidx.startup:startup-runtime:1.0.0] /Users/ahmad/.gradle/caches
 MERGED from [androidx.tracing:tracing:1.1.0] /Users/ahmad/.gradle/caches/transforms-3/816103dcaf20cc3449d44e7aef228ddc/transformed/jetified-tracing-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/ahmad/.gradle/caches/transforms-3/64b55a0ad447c9d7608986823ffb3a12/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/ahmad/.gradle/caches/transforms-3/c15a7e0a99bb25483d068fddbb8c4f6a/transformed/jetified-ui-common-2.6.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/ahmad/.gradle/caches/transforms-3/0eba2a16e2a1cb3e4265e0366e9b27e0/transformed/exifinterface-1.3.3/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ahmad/.gradle/caches/transforms-3/cde464ada6bf8e4db1ce6a3edaecd38a/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite:2.2.0] /Users/ahmad/.gradle/caches/transforms-3/dc58477293179deb391b12c4cba55b48/transformed/sqlite-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/ahmad/.gradle/caches/transforms-3/dfc6ab3249e5535f070488292c345975/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -108,6 +116,10 @@ application
 ADDED from /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:5:5-24:19
 MERGED from /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:5:5-24:19
 MERGED from /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:5:5-24:19
+MERGED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-29:19
+MERGED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:5-29:19
+MERGED from [:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-17:19
+MERGED from [:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-17:19
 MERGED from [com.facebook.soloader:soloader:0.10.5] /Users/ahmad/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:11:5-15:19
 MERGED from [com.facebook.soloader:soloader:0.10.5] /Users/ahmad/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:11:5-15:19
 MERGED from [com.google.android.material:material:1.1.0] /Users/ahmad/.gradle/caches/transforms-3/9300c7fc5aff0974f1ee709fb212c45e/transformed/material-1.1.0/AndroidManifest.xml:22:5-20
@@ -192,20 +204,32 @@ MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.182.0] /Users/ahmad/.g
 MERGED from [com.facebook.flipper:flipper-fresco-plugin:0.182.0] /Users/ahmad/.gradle/caches/transforms-3/927874504f02e490d8ef5fc541319ddd/transformed/jetified-flipper-fresco-plugin-0.182.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper:0.182.0] /Users/ahmad/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:11:5-13:41
 MERGED from [com.facebook.flipper:flipper:0.182.0] /Users/ahmad/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:11:5-13:41
+MERGED from [:react-native-async-storage_async-storage] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-async-storage_async-storage] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/@react-native-async-storage/async-storage/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-camera-roll_camera-roll] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/@react-native-camera-roll/camera-roll/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-camera-roll_camera-roll] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/@react-native-camera-roll/camera-roll/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-google-signin_google-signin] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/@react-native-google-signin/google-signin/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-google-signin_google-signin] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/@react-native-google-signin/google-signin/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-linear-gradient] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-linear-gradient] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-linear-gradient/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-safe-area-context] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-safe-area-context] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-safe-area-context/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-screens] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [:react-native-screens] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-screens/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-video] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-video/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
+MERGED from [:react-native-video] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-video/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.react:react-android:0.72.3] /Users/ahmad/.gradle/caches/transforms-3/c89beba49bda3c7ff0db4787685e5ed7/transformed/jetified-react-android-0.72.3-debug/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.react:react-android:0.72.3] /Users/ahmad/.gradle/caches/transforms-3/c89beba49bda3c7ff0db4787685e5ed7/transformed/jetified-react-android-0.72.3-debug/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.react:hermes-android:0.72.3] /Users/ahmad/.gradle/caches/transforms-3/430a607cf6d546758ce98bd168677a7b/transformed/jetified-hermes-android-0.72.3-debug/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.react:hermes-android:0.72.3] /Users/ahmad/.gradle/caches/transforms-3/430a607cf6d546758ce98bd168677a7b/transformed/jetified-hermes-android-0.72.3-debug/AndroidManifest.xml:5:5-44
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/ahmad/.gradle/caches/transforms-3/463b085172aadec89519c358dac4e9e6/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:imagepipeline-okhttp3:2.5.0] /Users/ahmad/.gradle/caches/transforms-3/463b085172aadec89519c358dac4e9e6/transformed/jetified-imagepipeline-okhttp3-2.5.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] /Users/ahmad/.gradle/caches/transforms-3/05d9c604eec486451901ac6ad8c9cd7a/transformed/jetified-ucrop-2.2.6-native/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.6-native] /Users/ahmad/.gradle/caches/transforms-3/05d9c604eec486451901ac6ad8c9cd7a/transformed/jetified-ucrop-2.2.6-native/AndroidManifest.xml:7:5-9:41
 MERGED from [androidx.core:core-ktx:1.5.0] /Users/ahmad/.gradle/caches/transforms-3/c87b97424659a3cc7da5af62d81a0b78/transformed/jetified-core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.core:core-ktx:1.5.0] /Users/ahmad/.gradle/caches/transforms-3/c87b97424659a3cc7da5af62d81a0b78/transformed/jetified-core-ktx-1.5.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.ndk.thirdparty:openssl:1.1.1l-beta-1] /Users/ahmad/.gradle/caches/transforms-3/9aee53ed1b97b29f8fa14a865487ca10/transformed/jetified-openssl-1.1.1l-beta-1/AndroidManifest.xml:2:2-70
@@ -242,6 +266,8 @@ MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/ahmad/.gradle/
 MERGED from [com.facebook.fresco:imagepipeline-base:2.6.0] /Users/ahmad/.gradle/caches/transforms-3/e7a05d09ffaa90425e2121f36a5185b6/transformed/jetified-imagepipeline-base-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.material:material:1.1.0] /Users/ahmad/.gradle/caches/transforms-3/9300c7fc5aff0974f1ee709fb212c45e/transformed/material-1.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.1.0] /Users/ahmad/.gradle/caches/transforms-3/9300c7fc5aff0974f1ee709fb212c45e/transformed/material-1.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.adityaxjha:Android-ScalableVideoView:10e7b4da8b] /Users/ahmad/.gradle/caches/transforms-3/8043cf9f09bc5e65ef532fe884927f14/transformed/jetified-Android-ScalableVideoView-10e7b4da8b/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.adityaxjha:Android-ScalableVideoView:10e7b4da8b] /Users/ahmad/.gradle/caches/transforms-3/8043cf9f09bc5e65ef532fe884927f14/transformed/jetified-Android-ScalableVideoView-10e7b4da8b/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/ahmad/.gradle/caches/transforms-3/b14585e0ae3314e7a64bac79062dab1c/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.4.1] /Users/ahmad/.gradle/caches/transforms-3/b14585e0ae3314e7a64bac79062dab1c/transformed/appcompat-1.4.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.sqlite:sqlite-framework:2.2.0] /Users/ahmad/.gradle/caches/transforms-3/aed854fb12aa7a4f325a5318b63d5aa8/transformed/sqlite-framework-2.2.0/AndroidManifest.xml:20:5-22:41
@@ -250,8 +276,8 @@ MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/ahmad/.gradle/
 MERGED from [androidx.appcompat:appcompat-resources:1.4.1] /Users/ahmad/.gradle/caches/transforms-3/30de096d5ba1553f19f74e52c1ed5c94/transformed/jetified-appcompat-resources-1.4.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.autofill:autofill:1.1.0] /Users/ahmad/.gradle/caches/transforms-3/b2c399022120a5a16a836a433ff38c79/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.autofill:autofill:1.1.0] /Users/ahmad/.gradle/caches/transforms-3/b2c399022120a5a16a836a433ff38c79/transformed/jetified-autofill-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ahmad/.gradle/caches/transforms-3/d2a0ef851359ae355103c8a357e2e22c/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/ahmad/.gradle/caches/transforms-3/d2a0ef851359ae355103c8a357e2e22c/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/ahmad/.gradle/caches/transforms-3/d9be3a8e87333c5c5f406cc5515878e5/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.1.0] /Users/ahmad/.gradle/caches/transforms-3/d9be3a8e87333c5c5f406cc5515878e5/transformed/swiperefreshlayout-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth-api-phone:18.0.1] /Users/ahmad/.gradle/caches/transforms-3/0dbed10ee94cf33885e954f1b1e1fad1/transformed/jetified-play-services-auth-api-phone-18.0.1/AndroidManifest.xml:5:5-44
@@ -286,6 +312,8 @@ MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/ahmad/.gradle/caches/t
 MERGED from [com.facebook.fresco:middleware:2.6.0] /Users/ahmad/.gradle/caches/transforms-3/64b55a0ad447c9d7608986823ffb3a12/transformed/jetified-middleware-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/ahmad/.gradle/caches/transforms-3/c15a7e0a99bb25483d068fddbb8c4f6a/transformed/jetified-ui-common-2.6.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.facebook.fresco:ui-common:2.6.0] /Users/ahmad/.gradle/caches/transforms-3/c15a7e0a99bb25483d068fddbb8c4f6a/transformed/jetified-ui-common-2.6.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/ahmad/.gradle/caches/transforms-3/0eba2a16e2a1cb3e4265e0366e9b27e0/transformed/exifinterface-1.3.3/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.3] /Users/ahmad/.gradle/caches/transforms-3/0eba2a16e2a1cb3e4265e0366e9b27e0/transformed/exifinterface-1.3.3/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ahmad/.gradle/caches/transforms-3/cde464ada6bf8e4db1ce6a3edaecd38a/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/ahmad/.gradle/caches/transforms-3/cde464ada6bf8e4db1ce6a3edaecd38a/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.sqlite:sqlite:2.2.0] /Users/ahmad/.gradle/caches/transforms-3/dc58477293179deb391b12c4cba55b48/transformed/sqlite-2.2.0/AndroidManifest.xml:20:5-22:41
@@ -356,6 +384,52 @@ uses-permission#android.permission.ACCESS_WIFI_STATE
 ADDED from [com.facebook.flipper:flipper:0.182.0] /Users/ahmad/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:16:5-76
 	android:name
 		ADDED from [com.facebook.flipper:flipper:0.182.0] /Users/ahmad/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:16:22-73
+queries
+ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-11:15
+intent#action:name:android.media.action.IMAGE_CAPTURE
+ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-10:18
+action#android.media.action.IMAGE_CAPTURE
+ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-73
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:21-70
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-81
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-78
+provider#com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider
+ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-24:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-47
+	android:authorities
+		ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-60
+	android:exported
+		ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-94
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:78
+	android:resource
+		ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-75
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-67
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-28:72
+	android:theme
+		ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-69
+	android:name
+		ADDED from [:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-60
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/debug/AndroidManifest.xml:2:1-13:12 reason: com.reactnative.ivpusic.imagepicker requested WRITE_EXTERNAL_STORAGE
+provider#com.imagepicker.ImagePickerProvider
+ADDED from [:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-16:20
+	android:grantUriPermissions
+		ADDED from [:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-47
+	android:authorities
+		ADDED from [:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-71
+	android:exported
+		ADDED from [:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-63
 meta-data#com.facebook.soloader.enabled
 ADDED from [com.facebook.soloader:soloader:0.10.5] /Users/ahmad/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
 	android:value

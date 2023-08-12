@@ -5,6 +5,7 @@ import LinearGradient from 'react-native-linear-gradient'
 import Colors from '../../Utiles/Colors'
 import HomeScreenHeader from '../../Components/HomeScreenHeader'
 import PostCard from '../../Components/PostCard'
+import { scale } from 'react-native-size-matters'
 
 const HomeScreen = ({ navigation }) => {
 
@@ -43,7 +44,7 @@ const HomeScreen = ({ navigation }) => {
                     <TouchableOpacity style={styles.StoryItems}>
                         <Image style={{ width: 48, height: 48, borderRadius: 100 }} source={item.image} />
                     </TouchableOpacity>
-                    <Text style={{ fontSize: 14, fontWeight: '500', color: Colors.white }}>{item.name}</Text>
+                    <Text style={{ fontSize:  scale(12), fontWeight: '500', color: Colors.white }}>{item.name}</Text>
                 </View>
             </View>
         )
@@ -77,7 +78,7 @@ const HomeScreen = ({ navigation }) => {
                         <TouchableOpacity style={styles.AddStoryButton}>
                             <Image style={{ width: 32, height: 32 }} source={Images.Plus} />
                         </TouchableOpacity>
-                        <Text style={{ fontSize: 14, fontWeight: '500', color: Colors.white }}>{'New'}</Text>
+                        <Text style={{ fontSize: scale(12), fontWeight: '500', color: Colors.white }}>{'New'}</Text>
                     </View>
                     <FlatList
                         horizontal

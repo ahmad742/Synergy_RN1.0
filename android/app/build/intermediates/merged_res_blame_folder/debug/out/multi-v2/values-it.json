@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.synergy.app-mergeDebugResources-32:/values-it/values-it.xml",
+            "outputFile": "com.synergy.app-mergeDebugResources-35:/values-it/values-it.xml",
             "map": [
                 {
                     "source": "/Users/ahmad/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/res/values-it/values.xml",
@@ -52,6 +52,23 @@
                         "startOffsets": "5103",
                         "endColumns": "100",
                         "endOffsets": "5199"
+                    }
+                },
+                {
+                    "source": "/Users/ahmad/.gradle/caches/transforms-3/05d9c604eec486451901ac6ad8c9cd7a/transformed/jetified-ucrop-2.2.6-native/res/values-it/values-it.xml",
+                    "from": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,120,179",
+                        "endColumns": "64,58,50",
+                        "endOffsets": "115,174,225"
+                    },
+                    "to": {
+                        "startLines": "49,50,51",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "5204,5269,5328",
+                        "endColumns": "64,58,50",
+                        "endOffsets": "5264,5323,5374"
                     }
                 },
                 {
