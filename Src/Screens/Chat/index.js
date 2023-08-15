@@ -8,6 +8,7 @@ import {
     FlatList,
     Pressable,
     ScrollView,
+    TextInput,
 } from 'react-native'
 import React, { useState } from 'react'
 import Colors from '../../Utiles/Colors'
@@ -15,7 +16,11 @@ import Images from '../../Assets/Images/Index'
 import ChatHeader from '../../Components/ChatHeader'
 import LinearGradient from 'react-native-linear-gradient'
 import ChatTextInput from '../../Components/ChatTextInput'
+import EmojiSelector, { Categories } from 'react-native-emoji-selector'
+
 const Chat = ({ navigation }) => {
+
+    const [message, setMessage] = useState('')
 
     const messageData = [
         {
@@ -130,15 +135,58 @@ const Chat = ({ navigation }) => {
                 status='online'
                 onBackPress={() => navigation.goBack()}
             />
-
             <FlatList
                 data={messageData}
                 renderItem={_messageRenderItem}
                 keyExtractor={item => item.id}
             />
-            <ChatTextInput
-                placeholder={'Message...'}
-            />
+             
+            {
+                message.length > 0 ?
+                    <View style={styles.writeMessageStyle}>
+                        <TouchableOpacity style={{
+                            width: '15%',
+                            height: 44,
+                            justifyContent: "center",
+                            alignItems: 'center'
+                        }}>
+                            <Image style={{ width: 35, height: 35 }}
+                                source={Images.Emojis} />
+                        </TouchableOpacity>
+
+                        <TextInput
+                            onChangeText={(text) => setMessage(text)}
+                            value={message}
+                            placeholder={'Add a caption ...'}
+                            placeholderTextColor={Colors.GreyText}
+                            style={{
+                                width: '70%',
+                                height: 48,
+                                backgroundColor: Colors.ChatTextInputBgColor,
+                                color: Colors.white,
+                                borderRadius: 100,
+                                paddingHorizontal: 20
+                            }}
+                        />
+                        <TouchableOpacity style={{
+                            width: '15%',
+                            height: 44,
+                            justifyContent: "center",
+                            alignItems: 'center'
+                        }}>
+                            <Image style={{ width: 44, height: 44 }}
+                                source={Images.SendMessage} />
+                        </TouchableOpacity>
+                    </View>
+                    :
+                    <ChatTextInput
+                        placeholder={'Message...'}
+                        onChangeText={(text) => setMessage(text)}
+                        value={message}
+                    />
+            }
+            
+
         </SafeAreaView>
     )
 }
@@ -211,5 +259,21 @@ const styles = StyleSheet.create({
         fontSize: 12,
         fontWeight: '500',
         color: Colors.white
+    },
+    writeMessageStyle: {
+        width: "100%",
+        alignSelf: "center",
+        flexDirection: 'row',
+        justifyContent: "space-between",
+        backgroundColor: '#181D29',
+        height: 102,
+        alignItems: 'center',
+        position: 'absolute',
+        bottom: 0,
+        borderTopRightRadius: 20,
+        borderTopLeftRadius: 20,
+        borderTopColor: Colors.GreyText,
+        borderWidth: 0.4,
+        paddingHorizontal: 10
     }
 })

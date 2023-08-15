@@ -18,187 +18,566 @@
 13-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:3:5-67
 13-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:3:22-64
 14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-14-->[com.facebook.flipper:flipper:0.182.0] /Users/ahmad/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:16:5-76
-14-->[com.facebook.flipper:flipper:0.182.0] /Users/ahmad/.gradle/caches/transforms-3/e13f88164840fe641a466d05cd8edac7/transformed/jetified-flipper-0.182.0/AndroidManifest.xml:16:22-73
-15
-16    <queries>
-16-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-11:15
-17        <intent>
-17-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-10:18
-18            <action android:name="android.media.action.IMAGE_CAPTURE" />
-18-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-73
-18-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:21-70
-19        </intent>
-20    </queries>
-21
-22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-22-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:5-81
-22-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:22-78
-23    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-24
-25    <application
-25-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:5:5-24:19
-26        android:name="com.synergy.MainApplication"
-26-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:6:7-38
-27        android:allowBackup="false"
-27-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:10:7-34
-28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-28-->[androidx.core:core:1.7.0] /Users/ahmad/.gradle/caches/transforms-3/75e4635b66fa4e4e84e71b52579837ce/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
-29        android:debuggable="true"
-30        android:icon="@mipmap/ic_launcher"
-30-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:8:7-41
-31        android:label="@string/app_name"
-31-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:7:7-39
-32        android:roundIcon="@mipmap/ic_launcher_round"
-32-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:9:7-52
-33        android:theme="@style/AppTheme"
-33-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:11:7-38
-34        android:usesCleartextTraffic="true" >
-34-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/debug/AndroidManifest.xml:8:9-44
-35        <activity
-35-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/debug/AndroidManifest.xml:11:9-111
-36            android:name="com.facebook.react.devsupport.DevSettingsActivity"
-36-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/debug/AndroidManifest.xml:11:19-83
-37            android:exported="false" />
-37-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/debug/AndroidManifest.xml:11:84-108
-38        <activity
-38-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:12:7-23:18
-39            android:name="com.synergy.MainActivity"
-39-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:13:9-37
-40            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
-40-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:15:9-118
-41            android:exported="true"
-41-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:18:9-32
-42            android:label="@string/app_name"
-42-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:14:9-41
-43            android:launchMode="singleTask"
-43-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:16:9-40
-44            android:windowSoftInputMode="adjustResize" >
-44-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:17:9-51
-45            <intent-filter>
-45-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:19:9-22:25
-46                <action android:name="android.intent.action.MAIN" />
-46-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:20:13-65
-46-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:20:21-62
-47
-48                <category android:name="android.intent.category.LAUNCHER" />
-48-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:21:13-73
-48-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:21:23-70
-49            </intent-filter>
-50        </activity>
-51
-52        <provider
-52-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-24:20
-53            android:name="com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider"
-53-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-94
-54            android:authorities="com.synergy.provider"
-54-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-60
-55            android:exported="false"
-55-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-37
-56            android:grantUriPermissions="true" >
-56-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-47
-57            <meta-data
-57-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:78
-58                android:name="android.support.FILE_PROVIDER_PATHS"
-58-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-67
-59                android:resource="@xml/ivpusic_imagepicker_provider_paths" />
-59-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-75
-60        </provider>
-61
-62        <activity
-62-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-28:72
-63            android:name="com.yalantis.ucrop.UCropActivity"
-63-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-60
-64            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
-64-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-69
-65
-66        <provider
-66-->[:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-16:20
-67            android:name="com.imagepicker.ImagePickerProvider"
-67-->[:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-63
-68            android:authorities="com.synergy.imagepickerprovider"
-68-->[:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-71
-69            android:exported="false"
-69-->[:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
-70            android:grantUriPermissions="true" >
-70-->[:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-47
-71            <meta-data
-71-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:78
-72                android:name="android.support.FILE_PROVIDER_PATHS"
-72-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-67
-73                android:resource="@xml/imagepicker_provider_paths" />
-73-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-75
-74        </provider>
-75
-76        <meta-data
-76-->[com.facebook.soloader:soloader:0.10.5] /Users/ahmad/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
-77            android:name="com.facebook.soloader.enabled"
-77-->[com.facebook.soloader:soloader:0.10.5] /Users/ahmad/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
-78            android:value="false" />
-78-->[com.facebook.soloader:soloader:0.10.5] /Users/ahmad/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
-79
-80        <activity
-80-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:23:9-27:75
-81            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
-81-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:24:13-93
-82            android:excludeFromRecents="true"
-82-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:25:13-46
-83            android:exported="false"
-83-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:26:13-37
-84            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-84-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:27:13-72
-85        <!--
-86            Service handling Google Sign-In user revocation. For apps that do not integrate with
-87            Google Sign-In, this service will never be started.
-88        -->
-89        <service
-89-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:33:9-37:51
-90            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
-90-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:34:13-89
-91            android:exported="true"
-91-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:35:13-36
-92            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
-92-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:36:13-107
-93            android:visibleToInstantApps="true" />
-93-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:37:13-48
-94
-95        <activity
-95-->[com.google.android.gms:play-services-base:18.0.1] /Users/ahmad/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
-96            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-96-->[com.google.android.gms:play-services-base:18.0.1] /Users/ahmad/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
-97            android:exported="false"
-97-->[com.google.android.gms:play-services-base:18.0.1] /Users/ahmad/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
-98            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-98-->[com.google.android.gms:play-services-base:18.0.1] /Users/ahmad/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
-99
-100        <meta-data
-100-->[com.google.android.gms:play-services-basement:18.2.0] /Users/ahmad/.gradle/caches/transforms-3/7474ea6f701d343bb9a483fcdd8d0019/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
-101            android:name="com.google.android.gms.version"
-101-->[com.google.android.gms:play-services-basement:18.2.0] /Users/ahmad/.gradle/caches/transforms-3/7474ea6f701d343bb9a483fcdd8d0019/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
-102            android:value="@integer/google_play_services_version" />
-102-->[com.google.android.gms:play-services-basement:18.2.0] /Users/ahmad/.gradle/caches/transforms-3/7474ea6f701d343bb9a483fcdd8d0019/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
+14-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:5:1-72
+14-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:5:18-69
+15    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+15-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:6:1-67
+15-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:6:18-64
+16    <uses-permission android:name="android.permission.INTERNET" />
+16-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:3:5-67
+16-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:3:22-64
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:8:1-75
+17-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:8:18-72
+18    <uses-permission android:name="android.permission.CAMERA" />
+18-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:9:1-61
+18-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:9:18-58
+19    <uses-permission android:name="android.permission.BLUETOOTH" />
+19-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:10:1-64
+19-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:10:18-61
+20    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+20-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:11:1-76
+20-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:11:18-73
+21    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:12:1-77
+21-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:12:18-74
+22    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+22-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:13:1-71
+22-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:13:18-68
+23    <uses-permission android:name="android.permission.WAKE_LOCK" />
+23-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:14:1-64
+23-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:14:18-61
+24    <uses-permission android:name="android.permission.VIBRATE" />
+24-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:15:1-61
+24-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:15:18-59
+25    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+26
+27    <queries>
+27-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-11:15
+28        <intent>
+28-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-10:18
+29            <action android:name="android.media.action.IMAGE_CAPTURE" />
+29-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-73
+29-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:21-70
+30        </intent>
+31    </queries>
+32
+33    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+33-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:5-77
+33-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:7:22-74
+34    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+34-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:5-81
+34-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:27:22-78
+35    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+35-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:15:5-81
+35-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:15:22-78
+36    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+36-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:16:5-79
+36-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:16:22-76
+37    <uses-permission
+37-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:17:5-19:38
+38        android:name="android.permission.BROADCAST_CLOSE_SYSTEM_DIALOGS"
+38-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:18:9-73
+39        android:maxSdkVersion="30" />
+39-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:19:9-35
+40
+41    <application
+41-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:16:5-35:19
+42        android:name="com.synergy.MainApplication"
+42-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:17:7-38
+43        android:allowBackup="false"
+43-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:21:7-34
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.7.0] /Users/ahmad/.gradle/caches/transforms-3/75e4635b66fa4e4e84e71b52579837ce/transformed/core-1.7.0/AndroidManifest.xml:24:18-86
+45        android:debuggable="true"
+46        android:icon="@mipmap/ic_launcher"
+46-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:19:7-41
+47        android:label="@string/app_name"
+47-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:18:7-39
+48        android:roundIcon="@mipmap/ic_launcher_round"
+48-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:20:7-52
+49        android:theme="@style/AppTheme"
+49-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:22:7-38
+50        android:usesCleartextTraffic="true" >
+50-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/debug/AndroidManifest.xml:8:9-44
+51        <activity
+51-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/debug/AndroidManifest.xml:11:9-111
+52            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+52-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/debug/AndroidManifest.xml:11:19-83
+53            android:exported="false" />
+53-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/debug/AndroidManifest.xml:11:84-108
+54        <activity
+54-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:23:7-34:18
+55            android:name="com.synergy.MainActivity"
+55-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:24:9-37
+56            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+56-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:26:9-118
+57            android:exported="true"
+57-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:29:9-32
+58            android:label="@string/app_name"
+58-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:25:9-41
+59            android:launchMode="singleTask"
+59-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:27:9-40
+60            android:windowSoftInputMode="adjustResize" >
+60-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:28:9-51
+61            <intent-filter>
+61-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:30:9-33:25
+62                <action android:name="android.intent.action.MAIN" />
+62-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:31:13-65
+62-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:31:21-62
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:32:13-73
+64-->/Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/android/app/src/main/AndroidManifest.xml:32:23-70
+65            </intent-filter>
+66        </activity>
+67
+68        <provider
+68-->[:notifee_react-native] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/@notifee/react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-12:40
+69            android:name="io.invertase.notifee.NotifeeInitProvider"
+69-->[:notifee_react-native] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/@notifee/react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-68
+70            android:authorities="com.synergy.notifee-init-provider"
+70-->[:notifee_react-native] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/@notifee/react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-73
+71            android:exported="false"
+71-->[:notifee_react-native] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/@notifee/react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
+72            android:initOrder="-100" />
+72-->[:notifee_react-native] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/@notifee/react-native/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-37
+73        <provider
+73-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:16:9-24:20
+74            android:name="com.reactnative.ivpusic.imagepicker.IvpusicImagePickerFileProvider"
+74-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:13-94
+75            android:authorities="com.synergy.provider"
+75-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-60
+76            android:exported="false"
+76-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-37
+77            android:grantUriPermissions="true" >
+77-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-47
+78            <meta-data
+78-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:78
+79                android:name="android.support.FILE_PROVIDER_PATHS"
+79-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-67
+80                android:resource="@xml/ivpusic_imagepicker_provider_paths" />
+80-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-75
+81        </provider>
+82
+83        <activity
+83-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:26:9-28:72
+84            android:name="com.yalantis.ucrop.UCropActivity"
+84-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:27:13-60
+85            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+85-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:28:13-69
+86
+87        <provider
+87-->[:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:8:9-16:20
+88            android:name="com.imagepicker.ImagePickerProvider"
+88-->[:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:9:13-63
+89            android:authorities="com.synergy.imagepickerprovider"
+89-->[:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:13-71
+90            android:exported="false"
+90-->[:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-37
+91            android:grantUriPermissions="true" >
+91-->[:react-native-image-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-47
+92            <meta-data
+92-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-23:78
+93                android:name="android.support.FILE_PROVIDER_PATHS"
+93-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:17-67
+94                android:resource="@xml/imagepicker_provider_paths" />
+94-->[:react-native-image-crop-picker] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/react-native-image-crop-picker/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-75
+95        </provider>
+96
+97        <activity
+97-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:10:9-15:64
+98            android:name="im.zego.internal.screencapture.ZegoScreenCaptureManager$ZegoScreenCaptureAssistantActivity"
+98-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:11:13-118
+99            android:configChanges="screenSize|orientation"
+99-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:12:13-59
+100            android:exported="false"
+100-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:13:13-37
+101            android:screenOrientation="fullUser"
+101-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:14:13-49
+102            android:theme="@android:style/Theme.Translucent" />
+102-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:15:13-61
 103
-104        <provider
-104-->[androidx.emoji2:emoji2:1.0.0] /Users/ahmad/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:26:9-34:20
-105            android:name="androidx.startup.InitializationProvider"
-105-->[androidx.emoji2:emoji2:1.0.0] /Users/ahmad/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:27:13-67
-106            android:authorities="com.synergy.androidx-startup"
-106-->[androidx.emoji2:emoji2:1.0.0] /Users/ahmad/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:28:13-68
-107            android:exported="false" >
-107-->[androidx.emoji2:emoji2:1.0.0] /Users/ahmad/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:29:13-37
-108            <meta-data
-108-->[androidx.emoji2:emoji2:1.0.0] /Users/ahmad/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
-109                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-109-->[androidx.emoji2:emoji2:1.0.0] /Users/ahmad/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
-110                android:value="androidx.startup" />
-110-->[androidx.emoji2:emoji2:1.0.0] /Users/ahmad/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
-111            <meta-data
-111-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/ahmad/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
-112                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-112-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/ahmad/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
-113                android:value="androidx.startup" />
-113-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/ahmad/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
-114        </provider>
-115    </application>
-116
-117</manifest>
+104        <service
+104-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:17:9-25:19
+105            android:name="im.zego.internal.screencapture.ZegoScreenCaptureService"
+105-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:18:13-83
+106            android:enabled="true"
+106-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:19:13-35
+107            android:exported="false"
+107-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:20:13-37
+108            android:foregroundServiceType="mediaProjection" >
+108-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:21:13-60
+109            <intent-filter>
+109-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:22:13-24:29
+110                <action android:name="android.intent.action.screenshare" />
+110-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:17-76
+110-->[:zego-express-engine-reactnative] /Users/ahmad/Desktop/Personal_Projects/Synergy_Github/Synergy_RN1.0/node_modules/zego-express-engine-reactnative/android/build/intermediates/merged_manifest/debug/AndroidManifest.xml:23:25-73
+111            </intent-filter>
+112        </service>
+113
+114        <meta-data
+114-->[com.facebook.soloader:soloader:0.10.5] /Users/ahmad/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
+115            android:name="com.facebook.soloader.enabled"
+115-->[com.facebook.soloader:soloader:0.10.5] /Users/ahmad/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
+116            android:value="false" />
+116-->[com.facebook.soloader:soloader:0.10.5] /Users/ahmad/.gradle/caches/transforms-3/ec3312a013bd7d8a70466a1977a1dba4/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
+117
+118        <provider
+118-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:31:9-39:20
+119            android:name="androidx.startup.InitializationProvider"
+119-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:32:13-67
+120            android:authorities="com.synergy.androidx-startup"
+120-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:33:13-68
+121            android:exported="false" >
+121-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:34:13-37
+122            <meta-data
+122-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:36:13-38:52
+123                android:name="androidx.work.WorkManagerInitializer"
+123-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:37:17-68
+124                android:value="androidx.startup" />
+124-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:38:17-49
+125            <meta-data
+125-->[androidx.emoji2:emoji2:1.0.0] /Users/ahmad/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:31:13-33:52
+126                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+126-->[androidx.emoji2:emoji2:1.0.0] /Users/ahmad/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:32:17-75
+127                android:value="androidx.startup" />
+127-->[androidx.emoji2:emoji2:1.0.0] /Users/ahmad/.gradle/caches/transforms-3/223146ef33e3aa619e8b04649706e145/transformed/jetified-emoji2-1.0.0/AndroidManifest.xml:33:17-49
+128            <meta-data
+128-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/ahmad/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:31:13-33:52
+129                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+129-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/ahmad/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:32:17-78
+130                android:value="androidx.startup" />
+130-->[androidx.lifecycle:lifecycle-process:2.4.0] /Users/ahmad/.gradle/caches/transforms-3/d5d05479173d466a6bd0989b3b3e5ef4/transformed/jetified-lifecycle-process-2.4.0/AndroidManifest.xml:33:17-49
+131        </provider>
+132
+133        <service
+133-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:41:9-46:35
+134            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+134-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:42:13-88
+135            android:directBootAware="false"
+135-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:43:13-44
+136            android:enabled="@bool/enable_system_alarm_service_default"
+136-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:44:13-72
+137            android:exported="false" />
+137-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:45:13-37
+138        <service
+138-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:47:9-53:35
+139            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+139-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:48:13-84
+140            android:directBootAware="false"
+140-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:49:13-44
+141            android:enabled="@bool/enable_system_job_service_default"
+141-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:50:13-70
+142            android:exported="true"
+142-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:51:13-36
+143            android:permission="android.permission.BIND_JOB_SERVICE" />
+143-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:52:13-69
+144        <service
+144-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:54:9-59:35
+145            android:name="androidx.work.impl.foreground.SystemForegroundService"
+145-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:55:13-81
+146            android:directBootAware="false"
+146-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:56:13-44
+147            android:enabled="@bool/enable_system_foreground_service_default"
+147-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:57:13-77
+148            android:exported="false" />
+148-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:58:13-37
+149
+150        <receiver
+150-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:61:9-66:35
+151            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+151-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:62:13-88
+152            android:directBootAware="false"
+152-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:63:13-44
+153            android:enabled="true"
+153-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:64:13-35
+154            android:exported="false" />
+154-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:65:13-37
+155        <receiver
+155-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:67:9-77:20
+156            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+156-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:68:13-106
+157            android:directBootAware="false"
+157-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:69:13-44
+158            android:enabled="false"
+158-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:70:13-36
+159            android:exported="false" >
+159-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:71:13-37
+160            <intent-filter>
+160-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:73:13-76:29
+161                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+161-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:17-87
+161-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:74:25-84
+162                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+162-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:17-90
+162-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:75:25-87
+163            </intent-filter>
+164        </receiver>
+165        <receiver
+165-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:78:9-88:20
+166            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+166-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:79:13-104
+167            android:directBootAware="false"
+167-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:80:13-44
+168            android:enabled="false"
+168-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:81:13-36
+169            android:exported="false" >
+169-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:82:13-37
+170            <intent-filter>
+170-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:84:13-87:29
+171                <action android:name="android.intent.action.BATTERY_OKAY" />
+171-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:17-77
+171-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:85:25-74
+172                <action android:name="android.intent.action.BATTERY_LOW" />
+172-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:17-76
+172-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:86:25-73
+173            </intent-filter>
+174        </receiver>
+175        <receiver
+175-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:89:9-99:20
+176            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+176-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:90:13-104
+177            android:directBootAware="false"
+177-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:91:13-44
+178            android:enabled="false"
+178-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:92:13-36
+179            android:exported="false" >
+179-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:93:13-37
+180            <intent-filter>
+180-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:95:13-98:29
+181                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+181-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:17-83
+181-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:96:25-80
+182                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+182-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:17-82
+182-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:97:25-79
+183            </intent-filter>
+184        </receiver>
+185        <receiver
+185-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:100:9-109:20
+186            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+186-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:101:13-103
+187            android:directBootAware="false"
+187-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:102:13-44
+188            android:enabled="false"
+188-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:103:13-36
+189            android:exported="false" >
+189-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:104:13-37
+190            <intent-filter>
+190-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:106:13-108:29
+191                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+191-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:17-79
+191-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:107:25-76
+192            </intent-filter>
+193        </receiver>
+194        <receiver
+194-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:110:9-121:20
+195            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+195-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:111:13-88
+196            android:directBootAware="false"
+196-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:112:13-44
+197            android:enabled="false"
+197-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:113:13-36
+198            android:exported="false" >
+198-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:114:13-37
+199            <intent-filter>
+199-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:116:13-120:29
+200                <action android:name="android.intent.action.BOOT_COMPLETED" />
+200-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
+200-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
+201                <action android:name="android.intent.action.TIME_SET" />
+201-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:17-73
+201-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:118:25-70
+202                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+202-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:17-81
+202-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:119:25-78
+203            </intent-filter>
+204        </receiver>
+205        <receiver
+205-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:122:9-131:20
+206            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+206-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:123:13-99
+207            android:directBootAware="false"
+207-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:124:13-44
+208            android:enabled="@bool/enable_system_alarm_service_default"
+208-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:125:13-72
+209            android:exported="false" >
+209-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:126:13-37
+210            <intent-filter>
+210-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:128:13-130:29
+211                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+211-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:17-98
+211-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:129:25-95
+212            </intent-filter>
+213        </receiver>
+214        <receiver
+214-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:132:9-142:20
+215            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+215-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:133:13-78
+216            android:directBootAware="false"
+216-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:134:13-44
+217            android:enabled="true"
+217-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:135:13-35
+218            android:exported="true"
+218-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:136:13-36
+219            android:permission="android.permission.DUMP" >
+219-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:137:13-57
+220            <intent-filter>
+220-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:139:13-141:29
+221                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+221-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:17-88
+221-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:140:25-85
+222            </intent-filter>
+223        </receiver>
+224
+225        <service
+225-->[androidx.room:room-runtime:2.2.5] /Users/ahmad/.gradle/caches/transforms-3/32f4dc14231a603560d048af81f18073/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+226            android:name="androidx.room.MultiInstanceInvalidationService"
+226-->[androidx.room:room-runtime:2.2.5] /Users/ahmad/.gradle/caches/transforms-3/32f4dc14231a603560d048af81f18073/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+227            android:directBootAware="true"
+227-->[androidx.room:room-runtime:2.2.5] /Users/ahmad/.gradle/caches/transforms-3/32f4dc14231a603560d048af81f18073/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+228            android:exported="false" />
+228-->[androidx.room:room-runtime:2.2.5] /Users/ahmad/.gradle/caches/transforms-3/32f4dc14231a603560d048af81f18073/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+229
+230        <activity
+230-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:23:9-27:75
+231            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+231-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:24:13-93
+232            android:excludeFromRecents="true"
+232-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:25:13-46
+233            android:exported="false"
+233-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:26:13-37
+234            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+234-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:27:13-72
+235        <!--
+236            Service handling Google Sign-In user revocation. For apps that do not integrate with
+237            Google Sign-In, this service will never be started.
+238        -->
+239        <service
+239-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:33:9-37:51
+240            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+240-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:34:13-89
+241            android:exported="true"
+241-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:35:13-36
+242            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+242-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:36:13-107
+243            android:visibleToInstantApps="true" />
+243-->[com.google.android.gms:play-services-auth:20.5.0] /Users/ahmad/.gradle/caches/transforms-3/90198af581089d07ab6ad15af32eddc6/transformed/jetified-play-services-auth-20.5.0/AndroidManifest.xml:37:13-48
+244
+245        <activity
+245-->[com.google.android.gms:play-services-base:18.0.1] /Users/ahmad/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+246            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+246-->[com.google.android.gms:play-services-base:18.0.1] /Users/ahmad/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+247            android:exported="false"
+247-->[com.google.android.gms:play-services-base:18.0.1] /Users/ahmad/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+248            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+248-->[com.google.android.gms:play-services-base:18.0.1] /Users/ahmad/.gradle/caches/transforms-3/5c5981df95557675d2e59dd19bcd65bb/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+249
+250        <meta-data
+250-->[com.google.android.gms:play-services-basement:18.2.0] /Users/ahmad/.gradle/caches/transforms-3/7474ea6f701d343bb9a483fcdd8d0019/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:21:9-23:69
+251            android:name="com.google.android.gms.version"
+251-->[com.google.android.gms:play-services-basement:18.2.0] /Users/ahmad/.gradle/caches/transforms-3/7474ea6f701d343bb9a483fcdd8d0019/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:22:13-58
+252            android:value="@integer/google_play_services_version" /> <!-- Receiver Service -->
+252-->[com.google.android.gms:play-services-basement:18.2.0] /Users/ahmad/.gradle/caches/transforms-3/7474ea6f701d343bb9a483fcdd8d0019/transformed/jetified-play-services-basement-18.2.0/AndroidManifest.xml:23:13-66
+253        <service
+253-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:24:9-26:40
+254            android:name="app.notifee.core.ReceiverService"
+254-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:25:13-60
+255            android:exported="false" />
+255-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:26:13-37
+256
+257        <activity
+257-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:28:9-34:75
+258            android:name="app.notifee.core.NotificationReceiverActivity"
+258-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:29:13-73
+259            android:excludeFromRecents="true"
+259-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:30:13-46
+260            android:exported="true"
+260-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:31:13-36
+261            android:noHistory="true"
+261-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:32:13-37
+262            android:taskAffinity=""
+262-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:33:13-36
+263            android:theme="@android:style/Theme.Translucent.NoTitleBar" /> <!-- Foreground Service -->
+263-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:34:13-72
+264        <service
+264-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:37:9-39:40
+265            android:name="app.notifee.core.ForegroundService"
+265-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:38:13-62
+266            android:exported="false" />
+266-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:39:13-37
+267
+268        <receiver
+268-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:41:9-49:20
+269            android:name="app.notifee.core.RebootBroadcastReceiver"
+269-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:42:13-68
+270            android:exported="false" >
+270-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:43:13-37
+271            <intent-filter>
+271-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:44:13-48:29
+272                <action android:name="android.intent.action.BOOT_COMPLETED" />
+272-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
+272-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
+273                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+273-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:46:17-82
+273-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:46:25-79
+274                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+274-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:47:17-82
+274-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:47:25-79
+275            </intent-filter>
+276        </receiver>
+277        <receiver
+277-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:50:9-56:20
+278            android:name="app.notifee.core.AlarmPermissionBroadcastReceiver"
+278-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:51:13-77
+279            android:exported="true" >
+279-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:52:13-36
+280            <intent-filter>
+280-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:53:13-55:29
+281                <action android:name="android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED" />
+281-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:54:17-107
+281-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:54:25-104
+282            </intent-filter>
+283        </receiver>
+284        <receiver
+284-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:57:9-65:20
+285            android:name="app.notifee.core.NotificationAlarmReceiver"
+285-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:58:13-70
+286            android:exported="false" >
+286-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:59:13-37
+287            <intent-filter>
+287-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:44:13-48:29
+288                <action android:name="android.intent.action.BOOT_COMPLETED" />
+288-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:17-79
+288-->[androidx.work:work-runtime:2.7.1] /Users/ahmad/.gradle/caches/transforms-3/a93c68fb1d2792ca1942259f5092d83b/transformed/work-runtime-2.7.1/AndroidManifest.xml:117:25-76
+289                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+289-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:46:17-82
+289-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:46:25-79
+290                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+290-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:47:17-82
+290-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:47:25-79
+291            </intent-filter>
+292        </receiver> <!-- Broadcast Receiver -->
+293        <receiver
+293-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:68:9-76:20
+294            android:name="app.notifee.core.BlockStateBroadcastReceiver"
+294-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:69:13-72
+295            android:exported="false" >
+295-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:70:13-37
+296            <intent-filter>
+296-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:71:13-75:29
+297                <action android:name="android.app.action.APP_BLOCK_STATE_CHANGED" />
+297-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:72:17-85
+297-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:72:25-82
+298                <action android:name="android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED" />
+298-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:73:17-102
+298-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:73:25-99
+299                <action android:name="android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED" />
+299-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:74:17-108
+299-->[app.notifee:core:202108261754] /Users/ahmad/.gradle/caches/transforms-3/001db43f9c560bc8a1d33a7f8ba5972e/transformed/jetified-core-202108261754/AndroidManifest.xml:74:25-105
+300            </intent-filter>
+301        </receiver>
+302    </application>
+303
+304</manifest>

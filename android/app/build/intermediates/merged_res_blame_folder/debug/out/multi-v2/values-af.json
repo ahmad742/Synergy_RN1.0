@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.synergy.app-mergeDebugResources-35:/values-af/values-af.xml",
+            "outputFile": "com.synergy.app-mergeDebugResources-37:/values-af/values-af.xml",
             "map": [
                 {
                     "source": "/Users/ahmad/.gradle/caches/transforms-3/7474ea6f701d343bb9a483fcdd8d0019/transformed/jetified-play-services-basement-18.2.0/res/values-af/values.xml",

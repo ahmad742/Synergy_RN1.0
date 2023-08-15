@@ -11,12 +11,18 @@ import com.facebook.react.shell.MainReactPackage;
 import java.util.Arrays;
 import java.util.ArrayList;
 
+// @notifee/react-native
+import io.invertase.notifee.NotifeePackage;
 // @react-native-async-storage/async-storage
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 // @react-native-camera-roll/camera-roll
 import com.reactnativecommunity.cameraroll.CameraRollPackage;
 // @react-native-google-signin/google-signin
 import com.reactnativegooglesignin.RNGoogleSigninPackage;
+// @zegocloud/zego-uikit-prebuilt-call-rn
+import com.zegouikitprebuiltcallrn.ZegoUIKitPrebuiltCallRNPackage;
+// @zegocloud/zego-uikit-rn
+import com.zegouikitrn.ZegoUIKitRNPackage;
 // react-native-image-crop-picker
 import com.reactnative.ivpusic.imagepicker.PickerPackage;
 // react-native-image-picker
@@ -27,8 +33,12 @@ import com.BV.LinearGradient.LinearGradientPackage;
 import com.th3rdwave.safeareacontext.SafeAreaContextPackage;
 // react-native-screens
 import com.swmansion.rnscreens.RNScreensPackage;
+// react-native-sound
+import com.zmxv.RNSound.RNSoundPackage;
 // react-native-video
 import com.brentvatne.react.ReactVideoPackage;
+// zego-express-engine-reactnative
+import im.zego.reactnative.RCTZegoExpressEnginePackage;
 
 public class PackageList {
   private Application application;
@@ -74,15 +84,20 @@ public class PackageList {
   public ArrayList<ReactPackage> getPackages() {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
+      new NotifeePackage(),
       new AsyncStoragePackage(),
       new CameraRollPackage(),
       new RNGoogleSigninPackage(),
+      new ZegoUIKitPrebuiltCallRNPackage(),
+      new ZegoUIKitRNPackage(),
       new PickerPackage(),
       new ImagePickerPackage(),
       new LinearGradientPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
-      new ReactVideoPackage()
+      new RNSoundPackage(),
+      new ReactVideoPackage(),
+      new RCTZegoExpressEnginePackage()
     ));
   }
 }

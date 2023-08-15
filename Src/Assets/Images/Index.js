@@ -63,5 +63,6 @@ export default Images = {
     EditMessage: require('./editMessage.png'),
     Comment2: require('./Comment2.png'),
     Calldecline: require('./calldecline.png'),
+    SendMessage: require('./sendmessage.png'),
 }
 
