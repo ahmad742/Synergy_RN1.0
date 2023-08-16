@@ -29,22 +29,22 @@ const Chat = ({ navigation }) => {
             time: '2:00 AM'
         },
         {
-            id: 1,
+            id: 2,
             senderMessage: 'Hi',
             time: '2:10 AM'
         },
         {
-            id: 1,
+            id: 3,
             userMessage: 'How are you?',
             time: '2:12 AM'
         },
         {
-            id: 1,
+            id: 4,
             senderMessage: 'I am Good',
             time: '2:15 AM'
         },
         {
-            id: 1,
+            id: 5,
             userMessage: 'What are you doing',
             time: '2:17 AM'
         },
@@ -134,58 +134,20 @@ const Chat = ({ navigation }) => {
                 useProfile={Images.Add}
                 status='online'
                 onBackPress={() => navigation.goBack()}
+                onVideoPress={() => navigation.navigate('VideoCall')}
             />
             <FlatList
                 data={messageData}
                 renderItem={_messageRenderItem}
-                keyExtractor={item => item.id}
+                keyExtractor={(item, index) => `${item.id}, ${index}`}
             />
-             
-            {
-                message.length > 0 ?
-                    <View style={styles.writeMessageStyle}>
-                        <TouchableOpacity style={{
-                            width: '15%',
-                            height: 44,
-                            justifyContent: "center",
-                            alignItems: 'center'
-                        }}>
-                            <Image style={{ width: 35, height: 35 }}
-                                source={Images.Emojis} />
-                        </TouchableOpacity>
+            <ChatTextInput
+                placeholder={'Message...'}
+                onChangeText={(text) => setMessage(text)}
+                value={message}
+                messagelength={message.length > 0}
+            />
 
-                        <TextInput
-                            onChangeText={(text) => setMessage(text)}
-                            value={message}
-                            placeholder={'Add a caption ...'}
-                            placeholderTextColor={Colors.GreyText}
-                            style={{
-                                width: '70%',
-                                height: 48,
-                                backgroundColor: Colors.ChatTextInputBgColor,
-                                color: Colors.white,
-                                borderRadius: 100,
-                                paddingHorizontal: 20
-                            }}
-                        />
-                        <TouchableOpacity style={{
-                            width: '15%',
-                            height: 44,
-                            justifyContent: "center",
-                            alignItems: 'center'
-                        }}>
-                            <Image style={{ width: 44, height: 44 }}
-                                source={Images.SendMessage} />
-                        </TouchableOpacity>
-                    </View>
-                    :
-                    <ChatTextInput
-                        placeholder={'Message...'}
-                        onChangeText={(text) => setMessage(text)}
-                        value={message}
-                    />
-            }
-            
 
         </SafeAreaView>
     )

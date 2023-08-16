@@ -9,11 +9,12 @@ import {
     Pressable,
     ScrollView,
 } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import AllChatsHeader from '../../Components/AllChatsHeader'
 import Images from '../../Assets/Images/Index'
 import LinearGradient from 'react-native-linear-gradient'
 import Colors from '../../Utiles/Colors'
+import { getAllFreinds } from '../../api/methods/auth'
 
 const AllMessages = ({ navigation }) => {
     const onlineUserData = [
@@ -43,6 +44,10 @@ const AllMessages = ({ navigation }) => {
             image: Images.ProfileImage
         },
     ]
+
+    useEffect(() => {
+        getFreindsChat()
+    }, [])
 
     const userChats = [
         {
@@ -101,6 +106,22 @@ const AllMessages = ({ navigation }) => {
             callendTime: '23sec'
         },
     ]
+
+
+    const getFreindsChat = async () => {
+        try {
+            const response = await getAllFreinds();
+            if (response.data.status == 'error') {
+                alert(response.data.message)
+            }
+            console.log('Response', JSON.stringify(response.data));
+        } catch (error) {
+            if (error.response) {
+                console.log('Error:', error.response.data);
+            }
+        }
+    }
+
 
     const _userChatsRenderItem = ({ item }) => {
         return (
@@ -198,14 +219,14 @@ const AllMessages = ({ navigation }) => {
                     horizontal
                     data={onlineUserData}
                     renderItem={_onlineUseRenderItem}
-                    keyExtractor={item => item.id}
+                    keyExtractor={(item, index) => `${item.id}, ${index}`}
                 />
             </View>
             <View style={{ flex: 1 }}>
                 <FlatList
                     data={userChats}
                     renderItem={_userChatsRenderItem}
-                    keyExtractor={item => item.id}
+                    keyExtractor={(item, index) => `${item.id}, ${index}`}
                 />
             </View>
         </SafeAreaView>

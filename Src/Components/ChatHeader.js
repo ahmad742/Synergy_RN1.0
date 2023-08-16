@@ -8,7 +8,8 @@ const ChatHeader = (props) => {
         Username,
         userProfile,
         status,
-        onBackPress
+        onBackPress,
+        onVideoPress
     } = props
     return (
         <View style={styles.mainContainer}>
@@ -64,7 +65,9 @@ const ChatHeader = (props) => {
                         tintColor: Colors.white
                     }} source={Images.Phone} />
                 </TouchableOpacity>
-                <TouchableOpacity style={styles.RightIcons}>
+                <TouchableOpacity 
+                onPress={onVideoPress}
+                style={styles.RightIcons}>
                     <Image style={{
                         width: 24,
                         height: 24,

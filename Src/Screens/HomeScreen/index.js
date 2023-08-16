@@ -85,7 +85,7 @@ const HomeScreen = ({ navigation }) => {
                         showsHorizontalScrollIndicator={false}
                         data={storiesData}
                         renderItem={_storiesRenderItem}
-                        keyExtractor={item => item.id}
+                        keyExtractor={(item, index) => `${item.id}, ${index}`}
                     />
                 </View>
                 <FlatList
@@ -93,7 +93,7 @@ const HomeScreen = ({ navigation }) => {
                     showsVerticalScrollIndicator={false}
                     data={[1, 2, 3, 4, 5, 6, 7, 8, 9]}
                     renderItem={_postRenderItem}
-                    keyExtractor={item => item.id}
+                    keyExtractor={(item, index) => `${item.id}, ${index}`}
                 />
 
             </SafeAreaView>

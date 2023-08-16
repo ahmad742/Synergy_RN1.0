@@ -8,6 +8,7 @@ import {
     TouchableOpacity,
     TouchableWithoutFeedback,
     View,
+    Text
 } from 'react-native'
 import React from 'react'
 import Colors from '../Utiles/Colors'
@@ -18,7 +19,8 @@ const ChatTextInput = (props) => {
     const {
         value,
         onChangeText,
-        placeholder
+        placeholder,
+        messagelength,
     } = props
 
     return (
@@ -28,64 +30,14 @@ const ChatTextInput = (props) => {
         >
             {/* <TouchableWithoutFeedback onPress={Keyboard.dismiss}> */}
             <View style={styles.mainContainer}>
-                <TouchableOpacity style={{
-                    width: 44,
-                    height: 44,
-                    backgroundColor: '#1E2533',
-                    borderRadius: 100,
-                    justifyContent: "center",
+                <View style={{
+                    width: messagelength ? "85%" : '60%',
+                    alignSelf: "center",
+                    flexDirection: 'row',
+                    backgroundColor: '#181D29',
                     alignItems: 'center'
                 }}>
-                    <Image style={{ width: 30, height: 30 }}
-                        source={Images.camera} />
-                </TouchableOpacity>
-                <View style={{
-                    width: '50%',
-                    alignItems: "center",
-                    height: 48,
-                    backgroundColor: Colors.ChatTextInputBgColor,
-                    flexDirection: 'row',
-                    paddingHorizontal: 10,
-                    borderRadius: 30
-                }}>
                     <TouchableOpacity style={{
-                        width: 44,
-                        height: 44,
-                        justifyContent: "center",
-                        alignItems: 'center'
-                    }}>
-                        <Image style={{ width: 24, height: 24 }}
-                            source={Images.History} />
-                    </TouchableOpacity>
-
-                    <TextInput
-                        value={value}
-                        onChangeText={onChangeText}
-                        placeholder={placeholder}
-                        placeholderTextColor={Colors.GreyText}
-                        style={{
-                            width: '50%',
-                            alignItems: "center",
-                            height: 48,
-                            backgroundColor: Colors.ChatTextInputBgColor,
-                            color: Colors.white
-                        }}
-                    />
-                    <TouchableOpacity style={{
-                        width: 44,
-                        height: 44,
-                        justifyContent: "center",
-                        alignItems: 'center'
-                    }}>
-                        <Image style={{ width: 24, height: 24 }}
-                            source={Images.microphone} />
-                    </TouchableOpacity>
-                </View>
-                <TouchableOpacity
-                    onPress={() => {
-                       
-                    }}
-                    style={{
                         width: 44,
                         height: 44,
                         backgroundColor: '#1E2533',
@@ -93,34 +45,124 @@ const ChatTextInput = (props) => {
                         justifyContent: "center",
                         alignItems: 'center'
                     }}>
-                    <Image style={{ width: 24, height: 24 }}
-                        source={Images.Emojis} />
-                </TouchableOpacity>
-                <TouchableOpacity style={{
-                    width: 44,
-                    height: 44,
-                    backgroundColor: '#1E2533',
-                    borderRadius: 100,
-                    justifyContent: "center",
-                    alignItems: 'center'
-                }}>
-                    <Image style={{ width: 24, height: 24 }}
-                        source={Images.Image} />
-                </TouchableOpacity>
-                <TouchableOpacity style={{
-                    width: 44,
-                    height: 44,
-                    backgroundColor: '#1E2533',
-                    borderRadius: 100,
-                    justifyContent: "center",
-                    alignItems: 'center'
-                }}>
-                    <Image style={{ width: 24, height: 24 }}
-                        source={Images.PlusCircle} />
-                </TouchableOpacity>
+                        <Image style={{ width: 30, height: 30 }}
+                            source={Images.camera} />
+                    </TouchableOpacity>
+                    <View style={{
+                        width: "85%",
+                        alignItems: "center",
+                        height: 48,
+                        backgroundColor: Colors.ChatTextInputBgColor,
+                        flexDirection: 'row',
+                        paddingHorizontal: 10,
+                        borderRadius: 30
+                    }}>
+                        <TouchableOpacity style={{
+                            width: 44,
+                            height: 44,
+                            justifyContent: "center",
+                            alignItems: 'center'
+                        }}>
+                            <Image style={{ width: 24, height: 24 }}
+                                source={Images.History} />
+                        </TouchableOpacity>
+                        <TextInput
+                            value={value}
+                            onChangeText={onChangeText}
+                            placeholder={placeholder}
+                            placeholderTextColor={Colors.GreyText}
+                            style={{
+                                width: messagelength ? "60%" : '50%',
+                                alignItems: "center",
+                                height: 48,
+                                backgroundColor: Colors.ChatTextInputBgColor,
+                                color: Colors.white
+                            }}
+                        />
+                        <TouchableOpacity style={{
+                            width: 44,
+                            height: 44,
+                            justifyContent: "center",
+                            alignItems: 'center',
+                        }}>
+                            <Image style={{ width: 24, height: 24 }}
+                                source={Images.microphone} />
+                        </TouchableOpacity>
+                    </View>
+                </View>
+                {
+                    messagelength ?
+                        <View style={{
+                            width: '10%',
+                            alignItems: "center",
+                            flexDirection: 'row',
+                            borderRadius: 30,
+                            height: 44,
+                        }}>
+                            <TouchableOpacity style={{
+                                width: "100%",
+                                height: "100%",
+                                borderRadius: 10,
+                                justifyContent: "center",
+                                alignItems: 'center'
+                            }}
+                                onPress={() => {
+
+                                }}>
+                                <Image style={{ width:44, height: 44 }}
+                                    source={Images.SendMessage} />
+                            </TouchableOpacity>
+                        </View>
+                        :
+                        <View style={{
+                            width: '50%',
+                            alignItems: "center",
+                            flexDirection: 'row',
+                            borderRadius: 30,
+                        }}>
+                            <TouchableOpacity
+                                onPress={() => {
+
+                                }}
+                                style={{
+                                    width: 44,
+                                    height: 44,
+                                    backgroundColor: '#1E2533',
+                                    borderRadius: 100,
+                                    justifyContent: "center",
+                                    alignItems: 'center'
+                                }}>
+                                <Image style={{ width: 24, height: 24 }}
+                                    source={Images.Emojis} />
+                            </TouchableOpacity>
+                            <TouchableOpacity style={{
+                                width: 44,
+                                height: 44,
+                                backgroundColor: '#1E2533',
+                                borderRadius: 100,
+                                justifyContent: "center",
+                                alignItems: 'center'
+                            }}>
+                                <Image style={{ width: 24, height: 24 }}
+                                    source={Images.Image} />
+                            </TouchableOpacity>
+                            <TouchableOpacity style={{
+                                width: 44,
+                                height: 44,
+                                backgroundColor: '#1E2533',
+                                borderRadius: 100,
+                                justifyContent: "center",
+                                alignItems: 'center'
+                            }}>
+                                <Image style={{ width: 24, height: 24 }}
+                                    source={Images.PlusCircle} />
+                            </TouchableOpacity>
+                        </View>
+                }
+
             </View>
             {/* </TouchableWithoutFeedback> */}
-        </KeyboardAvoidingView>
+        </KeyboardAvoidingView >
     )
 }
 
@@ -131,7 +173,7 @@ const styles = StyleSheet.create({
         width: "100%",
         alignSelf: "center",
         flexDirection: 'row',
-        justifyContent: "space-between",
+        // justifyContent: "space-between",
         backgroundColor: '#181D29',
         height: 102,
         alignItems: 'center',

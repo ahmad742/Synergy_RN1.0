@@ -12,6 +12,7 @@ import Chat from '../../Screens/Chat';
 import AllMessages from '../../Screens/AllMessages';
 import ReelsScreen from '../../Screens/Reels/ReelsScreen';
 import NewPostScreen from '../../Screens/NewPostScreen/NewPostScreen';
+import VideoCall from '../../Screens/VideoCall/VideoCall';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -119,6 +120,9 @@ const TabStack = () => {
                 options={{
                     headerShown: false,
                     tabBarShowLabel: false,
+                    tabBarStyle: {
+                        display: 'none'
+                    },
                     tabBarIcon: ({ focused }) => (
                         <View style={{
                             top: -20,
@@ -240,6 +244,8 @@ function HomeStack() {
             <Stack.Screen name="Chat" component={Chat} />
             <Stack.Screen name="AllMessages" component={AllMessages} />
             <Stack.Screen name="ReelsScreen" component={ReelsScreen} />
+            <Stack.Screen name="VideoCall" component={VideoCall} />
+
         </Stack.Navigator>
     );
 }

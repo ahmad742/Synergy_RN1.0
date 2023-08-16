@@ -17,16 +17,15 @@ const Login = ({ navigation }) => {
         if (email == '' && passwword == '') {
             alert('Email and Password is required')
         } else {
-            console.log(email,passwword)
+            console.log("email -->>>>", email, "passwword -->>>>>", passwword)
             try {
                 const response = await signIn({
                     email: email,
-                    password: passwword  
+                    password: passwword
                 });
-                if(response.data.status=='error'){
+                if (response.data.status == 'error') {
                     alert(response.data.message)
-                }else{
-                    
+                } else {
                     navigation.replace('HomeStack')
                 }
                 console.log('Response', response.data);
@@ -35,7 +34,7 @@ const Login = ({ navigation }) => {
                     console.log('Error:', error.response.data);
                 }
             }
-                        
+
         }
     }
 

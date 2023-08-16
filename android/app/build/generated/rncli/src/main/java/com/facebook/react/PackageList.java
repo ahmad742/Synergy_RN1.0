@@ -23,6 +23,8 @@ import com.reactnativegooglesignin.RNGoogleSigninPackage;
 import com.zegouikitprebuiltcallrn.ZegoUIKitPrebuiltCallRNPackage;
 // @zegocloud/zego-uikit-rn
 import com.zegouikitrn.ZegoUIKitRNPackage;
+// react-native-encrypted-storage
+import com.emeraldsanto.encryptedstorage.RNEncryptedStoragePackage;
 // react-native-image-crop-picker
 import com.reactnative.ivpusic.imagepicker.PickerPackage;
 // react-native-image-picker
@@ -90,6 +92,7 @@ public class PackageList {
       new RNGoogleSigninPackage(),
       new ZegoUIKitPrebuiltCallRNPackage(),
       new ZegoUIKitRNPackage(),
+      new RNEncryptedStoragePackage(),
       new PickerPackage(),
       new ImagePickerPackage(),
       new LinearGradientPackage(),

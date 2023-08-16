@@ -9,7 +9,9 @@ const AppTextInput = (props) => {
         value,
         onChangeText,
         LeftIcon,
-        rightIcon
+        rightIcon,
+        secureTextEntry,
+        onRightIconPress
     } = props
 
     return (
@@ -38,10 +40,11 @@ const AppTextInput = (props) => {
                     height: 52,
                     color: Colors.white
                 }}
+                secureTextEntry={secureTextEntry}
             />
             {
                 rightIcon &&
-                <TouchableOpacity>
+                <TouchableOpacity onPress={onRightIconPress}>
                     <Image style={{ width: 18, height: 18, tintColor: Colors.white }}
                         source={rightIcon}
                     />
