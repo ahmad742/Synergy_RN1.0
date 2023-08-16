@@ -1,3 +1,4 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import axios from 'axios';
 
 import { store } from '../redux'
@@ -14,16 +15,21 @@ const client = axios.create({
 
 client.interceptors.request.use(
   async (config) => {
-    const requestConfig = config;
-    // const { authenticationToken } = store.getState().userSession;
-    // console.log("Authorization Token--->", authenticationToken)
-    // if (authenticationToken) {
-    //   requestConfig.headers = {
-    //     'Authorization': `Bearer ${authenticationToken.token}`,
-    //   };
-    // }
-    // console.log('requestConfig----->', requestConfig)
+    let requestConfig = { ...config }; // Copy config to avoid modifying the original object
+
+    try {
+      const token = await AsyncStorage.getItem('token');
+      console.log('Token from AsyncStorage:', token);
+
+      if (token) {
+        requestConfig.headers['Authorization'] = `Bearer ${token}`;
+      }
+    } catch (error) {
+      console.error('AsyncStorage Error:', error);
+    }
+
     return requestConfig;
+    
   },
 
   (err) => {

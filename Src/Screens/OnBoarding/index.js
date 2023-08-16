@@ -17,6 +17,9 @@ import Images from '../../Assets/Images/Index'
 import Colors from '../../Utiles/Colors';
 import CarouselDots from '../../Components/CarousalDots';
 import AppButton from '../../Components/AppButton';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { userSignIn } from '../../ReduxToolKit/Slices/authSlice';
+import { useDispatch } from 'react-redux';
 
 const OnBoarding = ({ navigation }) => {
     const SLIDER_WIDTH = Dimensions.get('window').width + 90
@@ -58,10 +61,25 @@ const OnBoarding = ({ navigation }) => {
         );
     }
 
+    const dispatch=useDispatch()
+    const onSkipPress = () => {
+        console.log('hello')
+        AsyncStorage.getItem('token').then((val) => {
+            if (val == undefined) {
+
+                navigation.navigate('AuthStack')
+
+            } else {
+                dispatch(userSignIn(val))
+                navigation.navigate('HomeStack')
+
+            }
+        })
+    }
     return (
         <SafeAreaView style={styles.mainContainer}>
             <TouchableOpacity
-                onPress={() => navigation.navigate('HomeStack')}
+                onPress={() => onSkipPress()}
                 style={styles.SkipContainer}>
                 <Text style={styles.SkipText}>
                     {'Skip'}
@@ -93,7 +111,7 @@ const OnBoarding = ({ navigation }) => {
             <AppButton
                 ButtonText={'Continue'}
                 ButtonStyle={{ marginTop: 30 }}
-                onPress={() => navigation.navigate('AuthStack')}
+                onPress={() => onSkipPress()}
                 RightIcon={Images.RightArrow}
             />
         </SafeAreaView>
