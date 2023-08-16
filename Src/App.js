@@ -3,6 +3,9 @@ import { View, Text, LogBox } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import MainRoute from './Navigations/MainRoute';
+import {store} from './ReduxToolKit/store/store'
+import { Provider } from 'react-redux';
+
 LogBox.ignoreLogs(['VirtualizedLists should never be nested']);
 LogBox.ignoreAllLogs();
 
@@ -18,8 +21,10 @@ LogBox.ignoreLogs([
 export default App = () => {
 
     return (
+        <Provider store={store}>
         <NavigationContainer>
             <MainRoute />
         </NavigationContainer>
+        </Provider>
     );
 }

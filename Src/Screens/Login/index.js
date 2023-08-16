@@ -6,8 +6,15 @@ import Header from '../../Components/Header'
 import AppTextInput from '../../Components/AppTextInput'
 import Images from '../../Assets/Images/Index'
 import AppButton from '../../Components/AppButton'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 import { signIn } from '../../api/methods/auth'
+import { useDispatch } from 'react-redux'
+import { userSignIn } from '../../ReduxToolKit/Slices/authSlice'
+
+
 const Login = ({ navigation }) => {
+
+    const dispatch = useDispatch()
 
     const [email, setEmail] = useState('')
     const [passwword, setPassword] = useState('')
@@ -17,22 +24,29 @@ const Login = ({ navigation }) => {
         if (email == '' && passwword == '') {
             alert('Email and Password is required')
         } else {
-            console.log("email -->>>>", email, "passwword -->>>>>", passwword)
+            console.log(email, passwword)
             try {
                 const response = await signIn({
                     email: email,
                     password: passwword
                 });
-                if (response.data.status == 'error') {
-                    alert(response.data.message)
+                console.log('Res',response)
+                if (response?.data?.status == 'error') {
+                    alert(response?.data?.message)
                 } else {
-                    navigation.replace('HomeStack')
+                    console.log('Login Response', response?.data?.token)
+                    try {
+                        await AsyncStorage.setItem('token', response.data.token)
+                        dispatch(userSignIn(response?.data?.token))
+                        navigation.replace('HomeStack')
+                    } catch (error) {
+                        alert('AsyncStorage Error')
+                    }
+
                 }
-                console.log('Response', response.data);
             } catch (error) {
-                if (error.response) {
-                    console.log('Error:', error.response.data);
-                }
+                    console.log('Error:', error);
+                
             }
 
         }
@@ -51,7 +65,7 @@ const Login = ({ navigation }) => {
                         fontWeight: '700',
                         color: Colors.white
                     }}>
-                        {'Login To Your Account'}
+                        {`Login To Your Account`}
                     </Text>
                 </View>
                 <AppTextInput
