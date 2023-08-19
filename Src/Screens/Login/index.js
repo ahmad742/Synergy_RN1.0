@@ -10,6 +10,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage'
 import { signIn } from '../../api/methods/auth'
 import { useDispatch } from 'react-redux'
 import { userSignIn } from '../../ReduxToolKit/Slices/authSlice'
+import Loader from '../../Components/Loader'
 
 
 const Login = ({ navigation }) => {
@@ -18,6 +19,7 @@ const Login = ({ navigation }) => {
 
     const [email, setEmail] = useState('')
     const [passwword, setPassword] = useState('')
+    const [loading, setLoading] = useState(false)
 
 
     const onSignInPress = async () => {
@@ -25,12 +27,13 @@ const Login = ({ navigation }) => {
             alert('Email and Password is required')
         } else {
             console.log(email, passwword)
+            setLoading(true)
             try {
                 const response = await signIn({
                     email: email,
                     password: passwword
                 });
-                console.log('Res',response)
+                console.log('Res', response)
                 if (response?.data?.status == 'error') {
                     alert(response?.data?.message)
                 } else {
@@ -45,8 +48,11 @@ const Login = ({ navigation }) => {
 
                 }
             } catch (error) {
-                    console.log('Error:', error);
-                
+                console.log('Error:', error);
+
+            }
+            finally {
+                setLoading(false)
             }
 
         }
@@ -127,7 +133,7 @@ const Login = ({ navigation }) => {
                         {'Sign Up'}
                     </Text>
                 </TouchableOpacity>
-
+                <Loader loading={loading} isShowIndicator={true} />
             </SafeAreaView>
         </LinearGradient>
     )

@@ -9,128 +9,76 @@ import {
     Pressable,
     ScrollView,
 } from 'react-native'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import AllChatsHeader from '../../Components/AllChatsHeader'
 import Images from '../../Assets/Images/Index'
 import LinearGradient from 'react-native-linear-gradient'
 import Colors from '../../Utiles/Colors'
-import { getAllFreinds } from '../../api/methods/auth'
+import { conversationList, getAllFreinds } from '../../api/methods/auth'
+import Loader from '../../Components/Loader'
+import { useIsFocused } from '@react-navigation/native'
 
 const AllMessages = ({ navigation }) => {
-    const onlineUserData = [
-        {
-            id: 1,
-            name: 'Alexander',
-            image: Images.ProfileImage
-        },
-        {
-            id: 2,
-            name: 'Alexander',
-            image: Images.ProfileImage
-        },
-        {
-            id: 3,
-            name: 'Alexander',
-            image: Images.ProfileImage
-        },
-        {
-            id: 4,
-            name: 'Alexander',
-            image: Images.ProfileImage
-        },
-        {
-            id: 5,
-            name: 'Alexander',
-            image: Images.ProfileImage
-        },
-    ]
+
+    const isFocused = useIsFocused()
+    const [allFriends, setAllFriends] = useState([])
+    const [loading, setLoading] = useState(false)
+    const [allMsgs, setAllMsgs] = useState([])
+
 
     useEffect(() => {
         getFreindsChat()
-    }, [])
-
-    const userChats = [
-        {
-            id: 1,
-            image: Images.ProfileImage,
-            name: 'Wade Warren',
-            latestMessage: 'Hi, how long are we goin ...',
-            callend: 'End Call',
-            callendTime: '6m : 23sec'
-        },
-        {
-            id: 2,
-            image: Images.ProfileImage,
-            name: 'Brooklyn Simmons',
-            latestMessage: 'Hi, how long are we goin ...',
-            time: '11:03 am',
-            messageCounter: '1'
-        },
-        {
-            id: 3,
-            image: Images.ProfileImage,
-            name: 'Frank',
-            latestMessage: 'Hi, how long are we goin ...',
-            callend: 'End Call',
-            callendTime: '2m : 2sec'
-        },
-        {
-            id: 4,
-            image: Images.ProfileImage,
-            name: 'Robert Fox',
-            latestMessage: 'Hi, how long are we goin ...',
-            time: '11:03 am',
-            messageCounter: '6'
-        },
-        {
-            id: 5,
-            image: Images.ProfileImage,
-            name: 'Jenny Wilson',
-            latestMessage: 'Hi, how long are we goin ...',
-            time: '11:03 am',
-        },
-        {
-            id: 6,
-            image: Images.ProfileImage,
-            name: 'Wade Warren',
-            latestMessage: 'Hi, how long are we goin ...',
-            time: '11:03 am',
-            messageCounter: '9'
-        },
-        {
-            id: 7,
-            image: Images.ProfileImage,
-            name: 'Frank',
-            latestMessage: 'Hi, how long are we goin ...',
-            callend: 'End Call',
-            callendTime: '23sec'
-        },
-    ]
-
+        allConversations()
+    }, [isFocused])
 
     const getFreindsChat = async () => {
+        setLoading(true)
         try {
             const response = await getAllFreinds();
             if (response.data.status == 'error') {
                 alert(response.data.message)
             }
-            console.log('Response', JSON.stringify(response.data));
+            setAllFriends(response.data?.data)
         } catch (error) {
             if (error.response) {
                 console.log('Error:', error.response.data);
             }
         }
+        finally {
+            setLoading(false)
+        }
+    }
+    const allConversations = async () => {
+        setLoading(true)
+        try {
+            const response = await conversationList();
+            if (response.data.status == 'error') {
+                alert(response.data.message)
+            }
+            setAllMsgs(response.data?.data)
+        } catch (error) {
+            console.log('allConversations-Error:', error);
+        }
+        finally {
+            setLoading(false)
+        }
     }
 
 
+
     const _userChatsRenderItem = ({ item }) => {
+        let time = ''
+        time = item?.date_time
+        const splitTime = time.split(' ')
         return (
             <TouchableOpacity
-                onPress={() => navigation.navigate('Chat')}
+                onPress={() => navigation.navigate('Chat', {
+                    convoDetails: item
+                })}
                 style={styles.messageCardContainer}>
                 <View style={styles.userImageContainer}>
                     <Image style={{ width: 44, height: 44, borderRadius: 100 }}
-                        source={item.image}
+                        source={{ uri: item?.friend?.image }}
                     />
                     <View style={styles.onlineInfoStyle}></View>
                 </View>
@@ -140,14 +88,14 @@ const AllMessages = ({ navigation }) => {
                     marginLeft: 10,
                 }}>
                     <Text style={{ fontSize: 18, fontWeight: '600', color: Colors.white }}>
-                        {item.name}</Text>
+                        {item?.friend?.username}</Text>
                     {
                         item.callendTime ?
                             <Text style={{ fontSize: 14, fontWeight: '500', color: Colors.GreyText }} numberOfLines={1}>
                                 {item.callendTime}</Text>
                             :
                             <Text style={{ fontSize: 14, fontWeight: '500', color: Colors.GreyText }} numberOfLines={1}>
-                                {item.latestMessage}</Text>
+                                {item?.last_message}</Text>
                     }
                 </View>
                 {
@@ -160,36 +108,36 @@ const AllMessages = ({ navigation }) => {
                         :
                         <View style={styles.messagetimeContainer}>
                             <Text style={{ fontSize: 14, fontWeight: '500', color: Colors.GreyText }}>
-                                {item.time}
+                                {splitTime[1]}
                             </Text>
                             {
-                                item.messageCounter &&
+                                item?.unread_messages > 0 &&
                                 <LinearGradient colors={[Colors.AppButtonColor1, Colors.AppButtonColor2]}
                                     style={styles.counterContainer}>
-                                    <Text style={{ fontSize: 14, fontWeight: '600', color: Colors.white }}>{item.messageCounter}</Text>
+                                    <Text style={{ fontSize: 14, fontWeight: '600', color: Colors.white }}>{item?.unread_messages}</Text>
                                 </LinearGradient>
                             }
                         </View>
                 }
-
-
             </TouchableOpacity>
         )
     }
 
     const _onlineUseRenderItem = ({ item }) => {
         return (
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Chat', {
+                friendDetails: item
+            })}>
                 <LinearGradient colors={['#191D2B', '#090D14']}
                     style={styles.usersOnlineInfoContainer}
                 >
                     <View style={styles.userImageContainer}>
                         <Image style={{ width: 44, height: 44, borderRadius: 100 }}
-                            source={item.image}
+                            source={{ uri: item?.image }}
                         />
                         <View style={styles.onlineInfoStyle}></View>
                     </View>
-                    <Text style={styles.usersNameTextStyle}>{item.name}</Text>
+                    <Text style={styles.usersNameTextStyle}>{item?.username}</Text>
 
                 </LinearGradient>
             </TouchableOpacity>
@@ -217,18 +165,19 @@ const AllMessages = ({ navigation }) => {
                         marginTop: 20,
                     }}
                     horizontal
-                    data={onlineUserData}
+                    data={allFriends}
                     renderItem={_onlineUseRenderItem}
                     keyExtractor={(item, index) => `${item.id}, ${index}`}
                 />
             </View>
             <View style={{ flex: 1 }}>
                 <FlatList
-                    data={userChats}
+                    data={allMsgs}
                     renderItem={_userChatsRenderItem}
                     keyExtractor={(item, index) => `${item.id}, ${index}`}
                 />
             </View>
+            <Loader loading={loading} isShowIndicator={true} />
         </SafeAreaView>
     )
 }

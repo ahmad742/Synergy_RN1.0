@@ -20,6 +20,7 @@ export default function VideoCall(props) {
                     onHangUp: () => { props.navigation.navigate('Chat') },
                 }}
             />
+
         </View>
     );
 }
@@ -29,3 +30,4 @@ const styles = StyleSheet.create({
         flex: 1
     }
 })
+

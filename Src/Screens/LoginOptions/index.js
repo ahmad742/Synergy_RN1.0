@@ -20,11 +20,11 @@ const LoginOptions = ({ navigation }) => {
                         style={{ width: "90%", height: 100 }}
                         source={require('../../Assets/Images/appIcon.png')} />
                 </View>
-                {/* <View style={styles.headingContainer}>
+                <View style={styles.headingContainer}>
                     <Text style={styles.mainHeading}>
                         {'Surf with \nFriends & Business Relations.'}
                     </Text>
-                </View> */}
+                </View>
                 <View style={styles.headingContainer}>
                     <Text style={styles.subHeading}>
                         {'Create a profile, follow other accounts, make your own videos and more'}

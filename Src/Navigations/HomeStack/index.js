@@ -176,7 +176,7 @@ const TabStack = () => {
                         )
                     }
                 }}
-                name="Chat" component={Chat}
+                name="AllMessages" component={AllMessages}
             />
             <Tab.Screen
                 options={{

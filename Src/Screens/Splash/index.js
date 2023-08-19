@@ -12,10 +12,21 @@ import {
 } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 import Images from '../../Assets/Images/Index';
-const Splash = ({ navigation }) => {
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { userSignIn } from '../../ReduxToolKit/Slices/authSlice';
+import { useDispatch } from 'react-redux';
 
+const Splash = ({ navigation }) => {
+    const dispatch = useDispatch()
     setTimeout(() => {
-        navigation.navigate('OnBoarding')
+        AsyncStorage.getItem('token').then((val) => {
+            if (val == undefined) {
+                navigation.navigate('AuthStack')
+            } else {
+                dispatch(userSignIn(val))
+                navigation.navigate('HomeStack')
+            }
+        })
     }, 2000);
 
     return (

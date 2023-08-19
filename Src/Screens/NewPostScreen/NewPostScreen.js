@@ -118,7 +118,7 @@ const NewPostScreen = ({ navigation }) => {
     return (
         <SafeAreaView style={styles.container}>
             <AddNewPost
-                onPress={() => navigation.goBack()}
+                onBackPress={() => navigation.goBack()}
                 onTickPress={post ? () => handlePost() : () => openImageCropper()}
                 text={"New Post"}
 
@@ -175,7 +175,7 @@ const NewPostScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor:Colors.SocialButtonColor
+        backgroundColor: Colors.SocialButtonColor
     },
 })
 

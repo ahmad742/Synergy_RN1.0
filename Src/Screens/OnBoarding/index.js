@@ -61,14 +61,12 @@ const OnBoarding = ({ navigation }) => {
         );
     }
 
-    const dispatch=useDispatch()
+    const dispatch = useDispatch()
     const onSkipPress = () => {
         console.log('hello')
         AsyncStorage.getItem('token').then((val) => {
             if (val == undefined) {
-
                 navigation.navigate('AuthStack')
-
             } else {
                 dispatch(userSignIn(val))
                 navigation.navigate('HomeStack')

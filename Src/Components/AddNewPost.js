@@ -6,52 +6,54 @@ import Header from './Header';
 import Images from '../Assets/Images/Index'
 
 // create a component
-const AddNewPost = ({ navigation }) => {
+const AddNewPost = (props) => {
+
+    const {
+        navigation,
+        onBackPress
+    } = props
+
     return (
         <View style={styles.container}>
-            <AddPostHeader navigation={navigation} />
+            <View style={styles.headerContainer}>
+                <TouchableOpacity
+                    onPress={onBackPress}
+                    style={{
+                        width: '15%',
+                        justifyContent: 'center',
+                        alignItems: 'center',
+                        height: 50,
+                    }}>
+                    <Image style={{
+                        width: 20,
+                        height: 20,
+                        tintColor: Colors.white
+                    }} source={Images.BackIcon} />
+                </TouchableOpacity>
+                <View style={{
+                    width: '70%',
+                    alignItems: 'center'
+                }}>
+                    <Text style={{
+                        color: Colors.white,
+                        fontWeight: '600',
+                        fontSize: 18
+                    }}>{'Heading'}</Text>
+                </View>
+                <View style={{
+                    width: '70%',
+                    alignItems: 'center'
+                }}>
+                    <Text style={{
+                        color: Colors.white,
+                        fontWeight: '600',
+                        fontSize: 18
+                    }}>{'Next'}</Text>
+                </View>
+            </View>
         </View>
     );
 };
-
-const AddPostHeader = ({ navigation }) => (
-    <View style={styles.headerContainer}>
-        <TouchableOpacity
-            onPress={() => navigation.goBack()}
-            style={{
-                width: '15%',
-                justifyContent: 'center',
-                alignItems: 'center',
-                height: 50,
-            }}>
-            <Image style={{
-                width: 20,
-                height: 20,
-                tintColor: Colors.white
-            }} source={Images.BackIcon} />
-        </TouchableOpacity>
-        <View style={{
-            width: '70%',
-            alignItems: 'center'
-        }}>
-            <Text style={{
-                color: Colors.white,
-                fontWeight: '600',
-                fontSize: 18
-            }}>{'Heading'}</Text>
-        </View>
-        <View style={{
-            width: '70%',
-            alignItems: 'center'
-        }}>
-            <Text style={{
-                color: Colors.white,
-                fontWeight: '600',
-                fontSize: 18
-            }}>{'Next'}</Text>
-        </View>
-    </View>
-)
 
 // define your styles
 const styles = StyleSheet.create({

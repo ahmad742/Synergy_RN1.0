@@ -19,8 +19,6 @@ client.interceptors.request.use(
 
     try {
       const token = await AsyncStorage.getItem('token');
-      console.log('Token from AsyncStorage:', token);
-
       if (token) {
         requestConfig.headers['Authorization'] = `Bearer ${token}`;
       }
@@ -29,7 +27,7 @@ client.interceptors.request.use(
     }
 
     return requestConfig;
-    
+
   },
 
   (err) => {

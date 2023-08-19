@@ -10,54 +10,126 @@ import {
     ScrollView,
     TextInput,
 } from 'react-native'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Colors from '../../Utiles/Colors'
 import Images from '../../Assets/Images/Index'
 import ChatHeader from '../../Components/ChatHeader'
 import LinearGradient from 'react-native-linear-gradient'
 import ChatTextInput from '../../Components/ChatTextInput'
 import EmojiSelector, { Categories } from 'react-native-emoji-selector'
+import { sendMessage, chatDetails } from '../../api/methods/auth'
+import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
+import { CameraRoll } from "@react-native-camera-roll/camera-roll";
+import ImageCropPicker from 'react-native-image-crop-picker';
 
-const Chat = ({ navigation }) => {
 
+const Chat = ({ navigation, route }) => {
+
+
+    const { friendDetails, convoDetails } = route?.params
     const [message, setMessage] = useState('')
+    const [allMsgs, setAllMsgs] = useState([])
+    const [results, setResults] = useState([]);
+    const [img, setimg] = useState('')
+    const [selectedImage, setSelectedImage] = useState('')
+    const [post, setPost] = useState()
 
-    const messageData = [
-        {
-            id: 1,
-            userMessage: 'hellooo',
-            time: '2:00 AM'
-        },
-        {
-            id: 2,
-            senderMessage: 'Hi',
-            time: '2:10 AM'
-        },
-        {
-            id: 3,
-            userMessage: 'How are you?',
-            time: '2:12 AM'
-        },
-        {
-            id: 4,
-            senderMessage: 'I am Good',
-            time: '2:15 AM'
-        },
-        {
-            id: 5,
-            userMessage: 'What are you doing',
-            time: '2:17 AM'
-        },
-    ]
+    useEffect(() => {
+        setTimeout(() => {
+            chatList()
+        }, 500);
+    }, [])
+
+    useEffect(() => {
+        hasAndroidPermission()
+        _handleButtonPress()
+    }, [])
+
+
+    const _handleButtonPress = async () => {
+        await CameraRoll?.getPhotos({
+            first: 40,
+            assetType: 'Photos',
+        }).then(photosList => {
+            setResults(photosList.edges)
+            const pic = photosList.edges[0].node.image.uri
+            setimg(pic)
+            setSelectedImage(pic)
+        })
+            .catch((err) => {
+                Alert.alert(err)
+            });
+    };
+    const openCamera = () => {
+        launchCamera({}, (response) => {
+            if (response.didCancel) {
+                console.log('Camera was canceled');
+            } else if (response.error) {
+                console.log('Error occurred: ', response.error);
+            } else {
+                console.log('Captured image:', response.assets[0].uri);
+                setSelectedImage(response.assets[0].uri)
+            }
+        });
+    };
+
+    const openImageCropper = () => {
+        ImageCropPicker.openCropper({
+            path: selectedImage,
+            width: 300,
+            height: 400,
+            cropping: true,
+            includeBase64: true,
+        })
+            .then((croppedImage) => {
+                console.log('Cropped image:', croppedImage.path);
+                setSelectedImage(croppedImage.path) // 
+                console.log('Cropped image base64:', croppedImage.path);
+                setPost(croppedImage.path)
+            })
+            .catch((error) => {
+                console.log('Error occurred during cropping:', error);
+            });
+    };
+    const sendMsg = async () => {
+        try {
+            let formData = new FormData()
+            formData.append('friend_id', friendDetails?.id || convoDetails?.friend?.id)
+            formData.append('message_type', 'text')
+            formData.append('message', message)
+            formData.append('reaction', "smile")
+            formData.append('parent_id', '1')
+            console.log("formData==>>", formData)
+            const response = await sendMessage(formData)
+            if (response?.data?.code == 200) {
+                setMessage('')
+            }
+        } catch (error) {
+            console.log('Error:', error);
+        }
+    }
+    const chatList = async () => {
+        try {
+            const response = await chatDetails(convoDetails?.id);
+            if (response.data?.code == 200) {
+                setAllMsgs(response.data?.data)
+            }
+        } catch (error) {
+            console.log('Chat-List-Error:', error);
+        }
+    }
 
     _messageRenderItem = ({ item }) => {
+        let time = ''
+        time = item?.parent_message?.date_time
+        const splitTime = time.split(' ')
         return (
             <View style={{
                 width: "90%",
                 alignSelf: 'center'
             }}>
                 {
-                    item.senderMessage ?
+                    item?.receiver ?
                         <TouchableOpacity
                             delayLongPress={5} onLongPress={() => { console.log("pressed") }}
                             style={{
@@ -72,15 +144,14 @@ const Chat = ({ navigation }) => {
                                 alignItems: 'center'
                             }}>
                                 <View style={styles.imageProfileContainer}>
-                                    <Image style={styles.imageProfileStyle} source={Images.ProfileImage} />
+                                    <Image style={styles.imageProfileStyle} source={{ uri: item?.receiver?.image }} />
                                 </View>
                                 <View style={styles.messageInnerContainer}>
-                                    <Text style={styles.msgTextStyle}>{item.senderMessage}</Text>
+                                    <Text style={styles.msgTextStyle}>{item?.message}</Text>
                                 </View>
                             </View>
                             <View style={styles.timeContainer}>
-
-                                <Text style={styles.timeText}>{item.time}</Text>
+                                <Text style={styles.timeText}>{splitTime[1]}</Text>
                             </View>
                         </TouchableOpacity>
                         :
@@ -109,17 +180,15 @@ const Chat = ({ navigation }) => {
                                         width: 42,
                                         height: 42,
                                         borderRadius: 100,
-                                    }} source={Images.ProfileImage} />
+                                    }} source={{ uri: item?.sender?.image }} />
                                 </View>
                             </View>
                             <View style={styles.userTimeContainer}>
 
-                                <Text style={styles.timeText}>{item.time}</Text>
+                                <Text style={styles.timeText}>{item?.parent_message?.date_time}</Text>
                             </View>
                         </View>
                 }
-
-
             </View>
         )
     }
@@ -130,14 +199,15 @@ const Chat = ({ navigation }) => {
             flex: 1
         }}>
             <ChatHeader
-                Username='Vitaliy Dorozho'
-                useProfile={Images.Add}
+                Username={friendDetails?.username || convoDetails?.friend?.username}
+                useProfile={{ uri: friendDetails?.image }}
                 status='online'
                 onBackPress={() => navigation.goBack()}
                 onVideoPress={() => navigation.navigate('VideoCall')}
+                onCameraPress={() => openCamera()}
             />
             <FlatList
-                data={messageData}
+                data={allMsgs?.messages}
                 renderItem={_messageRenderItem}
                 keyExtractor={(item, index) => `${item.id}, ${index}`}
             />
@@ -146,6 +216,7 @@ const Chat = ({ navigation }) => {
                 onChangeText={(text) => setMessage(text)}
                 value={message}
                 messagelength={message.length > 0}
+                onSendMsgPress={() => sendMsg()}
             />
 
 

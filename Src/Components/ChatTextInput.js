@@ -21,6 +21,8 @@ const ChatTextInput = (props) => {
         onChangeText,
         placeholder,
         messagelength,
+        onSendMsgPress,
+        onCameraPress
     } = props
 
     return (
@@ -35,16 +37,19 @@ const ChatTextInput = (props) => {
                     alignSelf: "center",
                     flexDirection: 'row',
                     backgroundColor: '#181D29',
-                    alignItems: 'center'
+                    alignItems: 'center',
+                    justifyContent: 'space-between'
                 }}>
-                    <TouchableOpacity style={{
-                        width: 44,
-                        height: 44,
-                        backgroundColor: '#1E2533',
-                        borderRadius: 100,
-                        justifyContent: "center",
-                        alignItems: 'center'
-                    }}>
+                    <TouchableOpacity
+                        onPress={onCameraPress}
+                        style={{
+                            width: 44,
+                            height: 44,
+                            backgroundColor: '#1E2533',
+                            borderRadius: 100,
+                            justifyContent: "center",
+                            alignItems: 'center'
+                        }}>
                         <Image style={{ width: 30, height: 30 }}
                             source={Images.camera} />
                     </TouchableOpacity>
@@ -99,26 +104,26 @@ const ChatTextInput = (props) => {
                             borderRadius: 30,
                             height: 44,
                         }}>
-                            <TouchableOpacity style={{
-                                width: "100%",
-                                height: "100%",
-                                borderRadius: 10,
-                                justifyContent: "center",
-                                alignItems: 'center'
-                            }}
-                                onPress={() => {
-
+                            <TouchableOpacity
+                                onPress={onSendMsgPress}
+                                style={{
+                                    width: "100%",
+                                    height: "100%",
+                                    borderRadius: 10,
+                                    justifyContent: "center",
+                                    alignItems: 'center'
                                 }}>
-                                <Image style={{ width:44, height: 44 }}
+                                <Image style={{ width: 44, height: 44 }}
                                     source={Images.SendMessage} />
                             </TouchableOpacity>
                         </View>
                         :
                         <View style={{
-                            width: '50%',
+                            width: '40%',
                             alignItems: "center",
                             flexDirection: 'row',
                             borderRadius: 30,
+                            justifyContent: 'flex-end'
                         }}>
                             <TouchableOpacity
                                 onPress={() => {
