@@ -9,7 +9,7 @@ import AppButton from '../../Components/AppButton'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { signIn } from '../../api/methods/auth'
 import { useDispatch } from 'react-redux'
-import { userSignIn } from '../../ReduxToolKit/Slices/authSlice'
+import { userInfo, userSignIn } from '../../ReduxToolKit/Slices/authSlice'
 import Loader from '../../Components/Loader'
 
 
@@ -41,6 +41,7 @@ const Login = ({ navigation }) => {
                     try {
                         await AsyncStorage.setItem('token', response.data.token)
                         dispatch(userSignIn(response?.data?.token))
+                        dispatch(userInfo(response?.data))
                         navigation.replace('HomeStack')
                     } catch (error) {
                         alert('AsyncStorage Error')

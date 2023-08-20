@@ -22,7 +22,8 @@ const ChatTextInput = (props) => {
         placeholder,
         messagelength,
         onSendMsgPress,
-        onCameraPress
+        onCameraPress,
+        onImagePickerPress
     } = props
 
     return (
@@ -97,26 +98,28 @@ const ChatTextInput = (props) => {
                 </View>
                 {
                     messagelength ?
-                        <View style={{
-                            width: '10%',
-                            alignItems: "center",
-                            flexDirection: 'row',
-                            borderRadius: 30,
-                            height: 44,
-                        }}>
-                            <TouchableOpacity
-                                onPress={onSendMsgPress}
-                                style={{
-                                    width: "100%",
-                                    height: "100%",
-                                    borderRadius: 10,
-                                    justifyContent: "center",
-                                    alignItems: 'center'
-                                }}>
-                                <Image style={{ width: 44, height: 44 }}
-                                    source={Images.SendMessage} />
-                            </TouchableOpacity>
-                        </View>
+                        <>
+                            <View style={{
+                                width: '10%',
+                                alignItems: "center",
+                                flexDirection: 'row',
+                                borderRadius: 30,
+                                height: 44,
+                            }}>
+                                <TouchableOpacity
+                                    onPress={onSendMsgPress}
+                                    style={{
+                                        width: "100%",
+                                        height: "100%",
+                                        borderRadius: 10,
+                                        justifyContent: "center",
+                                        alignItems: 'center'
+                                    }}>
+                                    <Image style={{ width: 44, height: 44 }}
+                                        source={Images.SendMessage} />
+                                </TouchableOpacity>
+                            </View>
+                        </>
                         :
                         <View style={{
                             width: '40%',
@@ -140,14 +143,16 @@ const ChatTextInput = (props) => {
                                 <Image style={{ width: 24, height: 24 }}
                                     source={Images.Emojis} />
                             </TouchableOpacity>
-                            <TouchableOpacity style={{
-                                width: 44,
-                                height: 44,
-                                backgroundColor: '#1E2533',
-                                borderRadius: 100,
-                                justifyContent: "center",
-                                alignItems: 'center'
-                            }}>
+                            <TouchableOpacity
+                                onPress={onImagePickerPress}
+                                style={{
+                                    width: 44,
+                                    height: 44,
+                                    backgroundColor: '#1E2533',
+                                    borderRadius: 100,
+                                    justifyContent: "center",
+                                    alignItems: 'center'
+                                }}>
                                 <Image style={{ width: 24, height: 24 }}
                                     source={Images.Image} />
                             </TouchableOpacity>

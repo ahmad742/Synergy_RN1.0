@@ -38,7 +38,7 @@ const AddNewPost = (props) => {
                         color: Colors.white,
                         fontWeight: '600',
                         fontSize: 18
-                    }}>{'Heading'}</Text>
+                    }}>{'Add New post'}</Text>
                 </View>
                 <View style={{
                     width: '70%',

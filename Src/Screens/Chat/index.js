@@ -9,6 +9,9 @@ import {
     Pressable,
     ScrollView,
     TextInput,
+    Alert,
+    Platform,
+    PermissionsAndroid,
 } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import Colors from '../../Utiles/Colors'
@@ -19,8 +22,8 @@ import ChatTextInput from '../../Components/ChatTextInput'
 import EmojiSelector, { Categories } from 'react-native-emoji-selector'
 import { sendMessage, chatDetails } from '../../api/methods/auth'
 import { launchCamera, launchImageLibrary } from 'react-native-image-picker';
-import { CameraRoll } from "@react-native-camera-roll/camera-roll";
-import ImageCropPicker from 'react-native-image-crop-picker';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 
 
 const Chat = ({ navigation, route }) => {
@@ -41,56 +44,75 @@ const Chat = ({ navigation, route }) => {
     }, [])
 
     useEffect(() => {
-        hasAndroidPermission()
-        _handleButtonPress()
+        requestCameraPermission()
+        userInfo()
     }, [])
-
-
-    const _handleButtonPress = async () => {
-        await CameraRoll?.getPhotos({
-            first: 40,
-            assetType: 'Photos',
-        }).then(photosList => {
-            setResults(photosList.edges)
-            const pic = photosList.edges[0].node.image.uri
-            setimg(pic)
-            setSelectedImage(pic)
+    const userInfo = () => {
+        AsyncStorage.getItem('user').then((val) => {
+            console.log("value -->>>", val);
         })
-            .catch((err) => {
-                Alert.alert(err)
-            });
-    };
-    const openCamera = () => {
-        launchCamera({}, (response) => {
-            if (response.didCancel) {
-                console.log('Camera was canceled');
-            } else if (response.error) {
-                console.log('Error occurred: ', response.error);
+    }
+
+    const libraryOptions = {
+        opacity: 0.3,
+        mediaType: 'mixed',
+        quality: 0.1,
+    }
+    const CameraOptions = {
+        opacity: 0.3,
+        mediaType: 'mixed',
+        quality: 1,
+    }
+    const requestCameraPermission = async () => {
+        try {
+            const granted = await PermissionsAndroid.request(
+                PermissionsAndroid.PERMISSIONS.CAMERA,
+                {
+                    title: "App Camera Permission",
+                    message: "App needs access to your camera ",
+                    buttonNeutral: "Ask Me Later",
+                    buttonNegative: "Cancel",
+                    buttonPositive: "OK"
+                }
+            );
+            if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+                console.log("Camera permission given");
             } else {
-                console.log('Captured image:', response.assets[0].uri);
-                setSelectedImage(response.assets[0].uri)
+                console.log("Camera permission denied");
             }
-        });
+        } catch (err) {
+            console.warn(err);
+        }
     };
 
-    const openImageCropper = () => {
-        ImageCropPicker.openCropper({
-            path: selectedImage,
-            width: 300,
-            height: 400,
-            cropping: true,
-            includeBase64: true,
-        })
-            .then((croppedImage) => {
-                console.log('Cropped image:', croppedImage.path);
-                setSelectedImage(croppedImage.path) // 
-                console.log('Cropped image base64:', croppedImage.path);
-                setPost(croppedImage.path)
-            })
-            .catch((error) => {
-                console.log('Error occurred during cropping:', error);
-            });
-    };
+    const callback = async response => {
+        console.log('my response=====>', response)
+        if (response.didCancel) {
+            console.log("User Cancelled Image Picker")
+        }
+        else if (response.error) {
+            console.log('ImagePicker Error: ', response.error);
+        }
+        else {
+            const source = {
+                uri: response.assets[0].uri,
+                name: response.assets[0].fileName,
+                type: response.assets[0].type,
+            };
+            setimg(source)
+        }
+    }
+
+    const showCamera = () => {
+        launchCamera(CameraOptions, callback);
+
+    }
+    const showLibrary = () => {
+        // console.log('im here')
+        launchImageLibrary(libraryOptions, callback)
+
+    }
+
     const sendMsg = async () => {
         try {
             let formData = new FormData()
@@ -112,6 +134,7 @@ const Chat = ({ navigation, route }) => {
         try {
             const response = await chatDetails(convoDetails?.id);
             if (response.data?.code == 200) {
+                console.log("chatList response -->>>", response.data?.data?.messages);
                 setAllMsgs(response.data?.data)
             }
         } catch (error) {
@@ -129,7 +152,7 @@ const Chat = ({ navigation, route }) => {
                 alignSelf: 'center'
             }}>
                 {
-                    item?.receiver ?
+                    item?.friend?.id != item?.sender?.id ?
                         <TouchableOpacity
                             delayLongPress={5} onLongPress={() => { console.log("pressed") }}
                             style={{
@@ -180,7 +203,7 @@ const Chat = ({ navigation, route }) => {
                                         width: 42,
                                         height: 42,
                                         borderRadius: 100,
-                                    }} source={{ uri: item?.sender?.image }} />
+                                    }} source={{ uri: item?.receiver?.image }} />
                                 </View>
                             </View>
                             <View style={styles.userTimeContainer}>
@@ -204,7 +227,7 @@ const Chat = ({ navigation, route }) => {
                 status='online'
                 onBackPress={() => navigation.goBack()}
                 onVideoPress={() => navigation.navigate('VideoCall')}
-                onCameraPress={() => openCamera()}
+                onCameraPress={() => showCamera()}
             />
             <FlatList
                 data={allMsgs?.messages}
@@ -217,6 +240,8 @@ const Chat = ({ navigation, route }) => {
                 value={message}
                 messagelength={message.length > 0}
                 onSendMsgPress={() => sendMsg()}
+                onImagePickerPress={() => showLibrary()}
+                onCameraPress={() => showCamera()}
             />
 
 
