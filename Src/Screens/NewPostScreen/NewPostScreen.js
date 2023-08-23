@@ -25,7 +25,6 @@ const NewPostScreen = ({ navigation }) => {
 
     useEffect(() => {
         hasAndroidPermission()
-        _handleButtonPress()
     }, [])
 
     const [results, setResults] = useState([]);
@@ -48,25 +47,26 @@ const NewPostScreen = ({ navigation }) => {
 
     const hasAndroidPermission = async () => {
         try {
-          const granted = await PermissionsAndroid.request(
-            PermissionsAndroid.PERMISSIONS.CAMERA,
-            {
-              title: "App Camera Permission",
-              message:"App needs access to your camera ",
-              buttonNeutral: "Ask Me Later",
-              buttonNegative: "Cancel",
-              buttonPositive: "OK"
+            const granted = await PermissionsAndroid.request(
+                PermissionsAndroid.PERMISSIONS.CAMERA,
+                {
+                    title: "App Camera Permission",
+                    message: "App needs access to your camera ",
+                    buttonNeutral: "Ask Me Later",
+                    buttonNegative: "Cancel",
+                    buttonPositive: "OK"
+                }
+            );
+            if (granted === PermissionsAndroid.RESULTS.GRANTED) {
+                console.log("Camera permission given");
+                _handleButtonPress()
+            } else {
+                console.log("Camera permission denied");
             }
-          );
-          if (granted === PermissionsAndroid.RESULTS.GRANTED) {
-            console.log("Camera permission given");
-          } else {
-            console.log("Camera permission denied");
-          }
         } catch (err) {
-          console.warn(err);
+            console.warn(err);
         }
-      };
+    };
 
 
     const _handleButtonPress = async () => {
@@ -74,8 +74,8 @@ const NewPostScreen = ({ navigation }) => {
             first: 40,
             assetType: 'Photos',
         }).then(photosList => {
-            setResults(photosList.edges)
-            const pic = photosList.edges[0].node.image.uri
+            setResults(photosList?.edges)
+            const pic = photosList?.edges[0]?.node?.image?.uri
             setSelectedImage(pic)
         })
             .catch((err) => {
@@ -143,7 +143,7 @@ const NewPostScreen = ({ navigation }) => {
             />
             <View>
                 <Image style={{ height: 400, width: "100%" }} resizeMode='cover'
-                    source={{ uri: (selectedImage ? selectedImage : "https://img.icons8.com/?size=512&id=14203&format=png") }} />
+                    source={selectedImage} />
             </View>
             <View style={{ height: 50, backgroundColor: 'white', justifyContent: 'space-between', alignItems: "center", flexDirection: 'row' }}>
 
