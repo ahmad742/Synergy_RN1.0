@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.synergy.app-mergeDebugResources-37:/values-fr/values-fr.xml",
+            "outputFile": "com.synergy.app-mergeDebugResources-39:/values-fr/values-fr.xml",
             "map": [
                 {
                     "source": "/Users/ahmad/.gradle/caches/transforms-3/05d9c604eec486451901ac6ad8c9cd7a/transformed/jetified-ucrop-2.2.6-native/res/values-fr/values-fr.xml",

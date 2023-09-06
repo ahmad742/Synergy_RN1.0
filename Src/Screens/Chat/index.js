@@ -29,7 +29,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const Chat = ({ navigation, route }) => {
 
 
-    const { friendDetails, convoDetails } = route?.params
+    const { friendDetails, convoDetails } = route?.params || ""
     const [message, setMessage] = useState('')
     const [allMsgs, setAllMsgs] = useState([])
     const [results, setResults] = useState([]);

@@ -19,6 +19,8 @@ import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
 import com.reactnativecommunity.cameraroll.CameraRollPackage;
 // @react-native-google-signin/google-signin
 import com.reactnativegooglesignin.RNGoogleSigninPackage;
+// @zegocloud/react-native-callkeep
+import io.wazo.callkeep.RNCallKeepPackage;
 // @zegocloud/zego-uikit-prebuilt-call-rn
 import com.zegouikitprebuiltcallrn.ZegoUIKitPrebuiltCallRNPackage;
 // @zegocloud/zego-uikit-rn
@@ -41,6 +43,10 @@ import com.zmxv.RNSound.RNSoundPackage;
 import com.brentvatne.react.ReactVideoPackage;
 // zego-express-engine-reactnative
 import im.zego.reactnative.RCTZegoExpressEnginePackage;
+// zego-zim-react-native
+import im.zego.RNZimReactnativeSdkPackage;
+// zego-zpns-react-native
+import im.zego.zpns_reactnative_sdk.RCTZegoZPNsPackage;
 
 public class PackageList {
   private Application application;
@@ -90,6 +96,7 @@ public class PackageList {
       new AsyncStoragePackage(),
       new CameraRollPackage(),
       new RNGoogleSigninPackage(),
+      new RNCallKeepPackage(),
       new ZegoUIKitPrebuiltCallRNPackage(),
       new ZegoUIKitRNPackage(),
       new RNEncryptedStoragePackage(),
@@ -100,7 +107,9 @@ public class PackageList {
       new RNScreensPackage(),
       new RNSoundPackage(),
       new ReactVideoPackage(),
-      new RCTZegoExpressEnginePackage()
+      new RCTZegoExpressEnginePackage(),
+      new RNZimReactnativeSdkPackage(),
+      new RCTZegoZPNsPackage()
     ));
   }
 }
